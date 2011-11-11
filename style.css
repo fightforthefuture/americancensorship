@@ -1,0 +1,413 @@
+/* CSS Document */
+
+body{
+	font-family:"Trebuchet MS", Myriad, Arial;
+	font-size:12px;
+	color:#333333;
+	text-align:left;
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul, li, ol{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+img{
+	border:none;
+	padding:0;
+	margin:0;
+}
+.cls{
+	clear:both;
+}
+a{
+	outline:none;
+	color:#314e9e;
+	text-decoration:underline;
+}
+a:hover{
+	color:#314e9e;
+	text-decoration:none;
+}
+.hide,h1 b,h2 b,h3 b,h5 b,a i{
+     position: absolute;
+     left: -9999px;
+}
+
+
+.headertop{
+	width:100%;
+	height:38px;
+	background:url(images/headertopbg.gif) repeat-x top left;
+	overflow:hidden;
+}
+.headertopwrap{
+	width:950px;
+	margin:0 auto;
+  padding:5px;
+	overflow:hidden;
+	color:#fff;
+	font-size:11px;
+}
+.headertopwrap p{
+  position:relative;
+  display:inline;
+  vertical-align:10px;
+}
+.headertopwrap p a{
+	color:#cccccc;
+	text-decoration:underline;
+	padding:0;
+}
+.headertopwrap p a:hover{
+	color:#cccccc;
+	text-decoration:none;
+}
+.headertopwrap a.social{
+  padding-left:10px;
+}
+.headertopwrap .social img{
+  height:25px;
+}
+
+.moto{
+	width:100%;
+	padding:0 0 0 0;
+	background:url(images/headerbottombg.gif) repeat;
+}
+.motowrap{
+	width:800px;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+	padding:72px 0 12px 0;
+}
+.topribbon{
+	position:absolute;
+	top:-7px;
+	left:-128px;
+}
+.motowrap h1{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:21px;
+	padding:0 0 5px 0;
+	color:#fff;
+	font-weight:normal;
+}
+.headerbottom{
+	width:100%;
+	padding:0 0 0 0;
+	overflow:hidden;
+	background:url(images/headerbottombg.gif) repeat;
+	border-top:1px solid #333333;
+}
+.headerbottomwrap{
+	width:800px;
+	margin:0 auto;
+	padding:25px 0 25px 0;
+	overflow:hidden;
+	color:#cccccc;
+	font-size:11px;
+}
+.column01{
+	width:175px;
+	float:left;
+	padding:0 0 0 0;
+}
+.headerbottomwrap h4{
+	font-size:14px;
+	color:#fff;
+	padding:0 0 3px 0;
+}
+.headerbottomwrap p{
+	font-size:11px;
+	padding:0 0 3px 0;
+	line-height:18px;
+}
+.column02{
+	width:240px;
+	float:left;
+	padding:0 0 0 65px;
+}
+.column03{
+	width:275px;
+	float:right;
+	padding:0 0 0 0;
+}
+.maincontentarea{
+	width:100%;
+	padding:35px 0;
+	overflow:hidden;
+	background:#f6f6f6;
+}
+.maincontent{
+	width:800px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+
+.signupcontentarea{
+  width:100%;
+  overflow:hidden;
+  background-color:#aaaaaa;
+}
+.signupcontent{
+  width:800px;
+  margin:0 auto;
+  padding:0;
+}
+.redtag{
+  position:absolute;
+  float:left;
+  margin-left:-170px;
+  margin-top:25px;
+  padding:0;
+   -webkit-box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.75);
+   -moz-box-shadow:    0px 2px 10px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px 2px 10px rgba(50, 50, 50, 0.75);
+}
+.redtag p{
+  background-color:#ee1100;
+  color:#fff;
+  font-size:16px;
+  margin:0px;
+  padding:10px;
+  text-shadow:1px 1px 2px #777;
+  font-weight:800;
+}
+.contentcenter{
+  width:800px;
+  margin-bottom:60px;
+}
+.contentcenter .sell{
+  color: #222;
+  font-size:25px;
+  padding:20px;
+  text-align:center;
+  text-shadow: 1px 1px 0px #ddd;
+  font-weight:500;
+}
+.signup{
+  text-align:center;
+}
+.signup .email{
+  font-size:18px;
+  border:0;
+  height:39px;
+  padding:0;
+  padding-left:15px;
+  margin:0;
+  margin-left:170px;
+  font-weight:800;
+  color:#aaa;
+  background:url(images/email-signup-background.png) no-repeat;
+  float:left;
+  width:347px;
+}
+.signup .send{
+  float:left;
+  margin:0;
+}
+
+.contentleft{
+	width:478px;
+	float:left;
+	padding:0 0 0 0;
+}
+.contentleft h2{
+	font-size:20px;
+	font-weight:normal;
+	line-height:32px;
+	padding:0 0 50px 0;
+}
+.contentleft h4{
+	font-size:14px;
+	padding:0 0 10px 0;
+}
+.contentright{
+	width:300px;
+	float:right;
+	padding:0 0 0 0;
+}
+.newsletter{
+	width:300px;
+	padding:0 0 50px 0;
+	overflow:hidden;
+}
+.newsletter h4{
+	font-size:14px;
+	padding:0 0 5px 0;
+}
+.newsletter p{
+	font-size:14px;
+	padding:0 0 5px 0;
+}
+
+.participateinfo{
+	width:300px;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+.participateinfo h4{
+	font-size:14px;
+	padding:0 0 5px 0;
+}
+.participateinfo ul li{
+	background:url(images/bullet01.png) no-repeat 0 7px;
+	padding:0 0 12px 0;
+	text-indent:10px;
+}
+.participateinfo p{
+	font-size:14px;
+	padding:0 0 5px 0;
+}
+.testimonialarea{
+	width:100%;
+	padding:35px 0 35px 0;
+	overflow:hidden;
+	background:#fff;
+	border-top:1px solid #e9e9e9;
+	border-bottom:1px solid #abaaaa;
+}
+.testimonialwrap{
+	width:800px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+.testimonialleft{
+	width:380px;
+	float:left;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+.testimonialwrap h4{
+	font-size:18px;
+	padding:0 0 0 0;
+	text-transform:uppercase;
+}
+.testimoniallist{
+	width:380px;
+	padding:20px 0 0 0;
+	overflow:hidden;
+}
+.testimoniallistleft{
+	width:62px;
+	float:left;
+}
+.testimoniallistright{
+	width:318px;
+	float:right;
+	padding:0 0 0 0;
+}
+.testimoniallistright p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+	color:#666666;
+	font-style:italic;
+	padding:0 0 5px 0;
+}
+.testimoniallistright span{
+	display:block;
+	text-align:right;
+	color:#55a4f2;
+}
+.testimoniallistright span a{
+	color:#55a4f2;
+}
+.testimonialright{
+	width:275px;
+	float:right;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+.sitelist{
+	width:275px;
+	padding:20px 0 10px 0;
+	overflow:hidden;
+}
+.sitelistleft{
+	width:25px;
+	float:left;
+	padding:3px 0 0 0;
+}
+.sitelistright{
+	width:250px;
+	float:right;
+}
+.sitelistright p{
+	font-size:16px;
+	color:#444444;
+}
+.sitelistright p a{
+	color:#444444;
+	text-decoration:none;
+}
+.footerarea{
+	width:100%;
+	padding:40px 0 30px 0;
+	overflow:hidden;
+	background:#f5f5f5;
+}
+.footer{
+	width:800px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	overflow:hidden;
+	text-align:center;
+}
+.footer p{
+	font-size:24px;
+	padding:0 0 30px 0;
+}
+.partners{
+  list-style-type:none;
+}
+.partners li{
+  display:inline;
+  margin:20px;
+  height:150px;
+}
+.partners li.fsf{
+}
+.partners li a{
+  text-decoration:none;
+  height:100px;
+  margin:10px;
+}
+.partners li img{
+
+}
+
+/* Thank you page */
+.thankyou{
+  text-align:center;
+}
+.thankyou .thanks{
+  font-size:20px;
+  font-wieght:600;
+  margin-bottom:20px;
+}
+.thankyou .social p{
+  font-face:Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+  font-size:25px;
+  font-weight:bold;
+  letter-spacing:-1px;
+}
+.thankyou .buttons{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.thankyou .buttons a{
+  margin-left:90px;
+}
+.thankyou .moment{
+  margin-top:20px;
+  font-size:20px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
