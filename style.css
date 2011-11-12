@@ -150,6 +150,104 @@ a:hover{
 	overflow:hidden;
 }
 
+/* Ask header text */
+.askheaderarea{
+  width:100%;
+  overflow:hidden;
+  background-color:#F7F7F7;
+  border-bottom:1px solid #DEDEDE;
+}
+.askheadercontent{
+  width:800px;
+  margin:0 auto;
+  padding:0;
+  text-align:center;
+}
+.askheadercontent h2{
+  color:#B53837;
+  font-size:25px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.askcontentarea{
+  width:100%
+  overflow:hidden;
+  background-color:#fff;
+  margin-bottom:15px;
+}
+.askcontent{
+  width:800px;
+  margin:0 auto;
+  padding:0;
+}
+.askcontent h3{
+  color:#252875;
+  margin:0;
+  margin-bottom:10px;
+  margin-top:10px;
+  font-size:18px;
+}
+.askcontent ul{
+  list-style:decimal;
+}
+.col{
+  margin:0;
+  width:380px;
+  padding-right:20px;
+  font-size:14px;
+  color:#333333;
+  font-weight:600;
+  line-height: 20px;
+}
+.col .quiet{
+  font-size:12px;
+  font-weight:500;
+  line-height:18px;
+}
+.askleft{
+  float:left;
+}
+.askleft li{
+  list-style:decimal;
+  margin-left:20px;
+  margin-bottom:10px;
+}
+.askleft .email{
+  font-size:12px;
+  border:0;
+  height:32px;
+  padding:0;
+  padding-left:10px;
+  margin:0;
+  font-weight:800;
+  color:#333;
+  background:url(images/upper-email-field-background.png) no-repeat;
+  float:left;
+  width:290px;
+}
+.askleft .send{
+  float:left;
+}
+.askleft .code{
+  border:1px solid #ccc;
+  padding:5px;
+  margin-bottom:5px;
+  margin-top:5px;
+  width:300px;
+}
+.askright{
+  float:right;
+}
+.askright img{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.askright ul, .askright li{
+  list-style-type:disc;
+  margin-left:10px;
+}
+
 .signupcontentarea{
   width:100%;
   overflow:hidden;
@@ -382,6 +480,7 @@ a:hover{
 .partners li img{
 
 }
+
 
 /* Thank you page */
 .thankyou{
