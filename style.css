@@ -216,21 +216,22 @@ a:hover{
   margin-left:20px;
   margin-bottom:10px;
 }
-.askleft .email{
+.askleft .email, .askleft .website{
   font-size:12px;
-  border:0;
+  border:1px solid #ccc;
   height:32px;
   padding:0;
   padding-left:10px;
-  margin:0;
   font-weight:800;
   color:#333;
-  background:url(images/upper-email-field-background.png) no-repeat;
-  float:left;
   width:290px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom:5px;
 }
 .askleft .send{
-  float:left;
+  margin-left:250px;
 }
 .askleft .code{
   border:1px solid #ccc;
