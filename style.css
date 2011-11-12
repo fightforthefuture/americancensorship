@@ -36,7 +36,9 @@ a:hover{
      position: absolute;
      left: -9999px;
 }
-
+.center{
+  text-align:center;
+}
 
 .headertop{
 	width:100%;
@@ -150,6 +152,13 @@ a:hover{
 	overflow:hidden;
 }
 
+.redheader{
+  color:#B53837;
+  font-size:25px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
 /* Ask header text */
 .askheaderarea{
   width:100%;
@@ -162,12 +171,6 @@ a:hover{
   margin:0 auto;
   padding:0;
   text-align:center;
-}
-.askheadercontent h2{
-  color:#B53837;
-  font-size:25px;
-  padding-top:15px;
-  padding-bottom:15px;
 }
 
 .askcontentarea{
@@ -418,7 +421,7 @@ a:hover{
 	color:#55a4f2;
 }
 .testimonialright{
-	width:275px;
+	width:380px;
 	float:right;
 	padding:0 0 0 0;
 	overflow:hidden;
