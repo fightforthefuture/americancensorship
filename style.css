@@ -53,6 +53,7 @@ a:hover{
 	overflow:hidden;
 	color:#fff;
 	font-size:11px;
+  text-align:center;
 }
 .headertopwrap p{
   position:relative;
@@ -496,20 +497,16 @@ a:hover{
 }
 .partners li{
   display:inline;
-  margin:20px;
-  height:150px;
-}
-.partners li.fsf{
+  margin:0;
+  padding:0;
 }
 .partners li a{
   text-decoration:none;
-  height:100px;
   margin:10px;
 }
-.partners li img{
-
+.partners img{
+  vertical-align:middle;
 }
-
 
 /* Thank you page */
 .thankyou{
