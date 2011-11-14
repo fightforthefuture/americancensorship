@@ -316,9 +316,34 @@ a:hover{
 }
 
 .contentleft{
-	width:478px;
+	width:450px;
 	float:left;
 	padding:0 0 0 0;
+}
+.contentleft ol{
+  margin-left:10px;
+}
+.contentleft ol, .contentleft ol li{
+  list-style-type:decimal;
+}
+.contentleft ol li{
+  margin-left:10px;
+  font-size:12px;
+  font-weight:600;
+  color:#333;
+  margin-bottom:10px;
+}
+.contentleft p{
+  font-size:18px;
+  margin-bottom:10px;
+}
+.contentleft a{
+  font-size:12px;
+}
+#article-list, #article-list li{
+  list-style-type:disc;
+  margin-left:10px;
+  margin-bottom:5px;
 }
 .contentleft h2{
 	font-size:20px;
