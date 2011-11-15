@@ -34,26 +34,18 @@
       <div id="modal-bottom"></div>
     </div>
 
-    <div style="display:none;">
-    <form action="http://act.demandprogress.org/act" method="POST" accept-charset="utf-8">
-      <input type="hidden" name="utf8" value="✔">
-      <input type="hidden" name="page" value="censorship_day">
-      <input type="hidden" name="action_referer" value="" id="id_referer"> 
-      <input type="hidden" name="lists" value="1">
+    <div id="secondary-form">
+      <form action="http://act.demandprogress.org/act" method="POST" accept-charset="utf-8">
+        <input type="hidden" name="utf8" value="✔" />
+        <input type="hidden" name="page" value="censorship_day" />
+        <input type="hidden" name="action_referer" value="" id="id_referer" /> 
+        <input type="hidden" name="lists" value="1" />
+        
+        <label for="id_name">Name:</label>
+        <input id="id_name" type="text" name="name">
 
-      <label for="id_prefix">Prefix:</label>
-      <select id="id_prefix" name="prefix">
-        <option selected="selected"></option>
-        <option>Mr.</option>
-        <option>Ms.</option>
-        <option>Mrs.</option>
-      </select>
-
-      <label for="id_name">Name:</label>
-      <input id="id_name" type="text" name="name">
-
-      <label for="id_email">Email:</label>
-      <input id="id_email" type="email" name="email">
+        <label for="id_email">Email:</label>
+        <input id="id_email" type="email" name="email">
 
      <label for="id_address1">Address:</label>
      <input id="id_address1" type="text" name="address1">
