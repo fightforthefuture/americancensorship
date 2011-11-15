@@ -16,6 +16,22 @@
           $("#initial-form").fadeOut();
           $("#secondary-form").fadeIn();
         });
+
+        $(".default-text").focus(function(){
+          if ($(this).val() == $(this)[0].title){
+            $(this).removeClass("default-text-active");
+            $(this).val("");
+          }
+        });
+
+        $(".default-text").blur(function(){
+          if ($(this).val() == ""){
+            $(this).addClass("default-text-active");
+            $(this).val($(this)[0].title);
+          }
+        });
+
+        $(".default-text").blur();  
       });
     </script>
   </head>
@@ -56,27 +72,19 @@
         <div id="secondary-form">
           <form action="http://act.demandprogress.org/act/" method="POST" accept-charset="utf-8">
             <div class="form-left">
-              <p>
-                <label for="id_name">Name:</label>
-                <input id="id_name" type="text" name="name">
-              </p>
-              <p>
-                <label for="id_email">Email:</label>
-                <input id="id_email" type="email" name="email">
-              </p>
-              <p>
-                <label for="id_address1">Address:</label>
-                <input id="id_address1" type="text" name="address1">
-              </p>
-
-              <label for="id_zip">ZIP:</label>
-              <input id="id_zip" type="text" name="zip" size="5"> (<a href="javascript:go_foreign()">I'm not in the US</a>)
+              <input class="default-text" type="text" name="name" title="Name"><br>
+              <input class="default-text" type="email" name="email" title="Email"><br>
+              <input class="default-text" id="id_address1" type="text" name="address1" title="Address"><br>
+              <input class="default-text" id="id_zip" type="text" name="zip" size="5" title="Zip"><br/> 
+              (<a href="javascript:go_foreign()">I'm not in the US</a>)<br>
             </div>
             <div class="form-right">
               <textarea id="id_comment" name="action_comment">Please don't censor the internet. PIPA and SOPA would do terrible things to online business!</textarea>
               <br/>
-              <button type="submit">Click here to send the letter!</button>
             </div>
+            <br class="clearfix">
+
+            <button class="css3button" type="submit">Send the letter!</button>
 
             <input type="hidden" name="utf8" value="✔" />
             <input type="hidden" name="page" value="censorship_day" />
