@@ -1,0 +1,110 @@
+/* form { */
+/*    font-size: 14px; */
+/*    font-family: 'Trebuchet MS', Myriad, Arial; */
+/* } */
+/* label { */
+/*    display: block; */
+/*    margin-bottom:5px; */
+/* } */
+/* input, select, textarea { */
+/*    margin-bottom: 10px; */
+/*    border: 1px solid #333; */
+/*    padding: 5px; */
+/*    border-radius: 3px;   */
+/* } */
+
+/* Overall structure. */
+#modal {
+   width: 900px;
+   font-family: "Helvetica", "Arial", sans-serif;
+}
+#modal-top {
+   background-image: url('/modal/images/modaltopbg.png');
+   background-repeat: no-repeat;
+   height: 177px;
+}
+#modal-middle {
+   background-image: url('/modal/images/modalboxbg.png');
+   background-repeat: repeat-y;
+   height: 350px;
+   padding-top: 5px;
+   padding-left: 25px;
+   padding-right: 25px;
+   color: #444;
+}
+#modal-bottom {
+   background-image: url('/modal/images/modalboxbottom.png');
+   background-repeat: no-repeat;
+   background-position: 1px 0px;
+   height: 100px;
+   padding-left:10px;
+}
+
+/* Header styling. */
+#modal-top div {
+   display: inline;
+}
+.title-text {
+   margin-top: 35px;
+   margin-left: 55px;
+}
+.logo-left {
+   float: left;
+   margin-left: 50px;
+   margin-top: 30px;
+}
+.logo-right {
+   float: right;
+   margin-top: 30px;
+   margin-right: 50px;
+}
+#initial-form {
+   text-align: center;
+}
+#initial-form p.top {
+   font-size: 18px;
+   font-weight: bold;
+   color: #444;
+}
+#initial-form .blue {
+   background-image: url('/modal/images/blueboxbg.png');
+   background-repeat: no-repeat;
+   width: 669px;
+   height: 180px;
+   color: #eee;
+   margin: 0;
+   margin-left: 72px;
+   padding: 15px;
+}
+.blue h2 {
+   margin: 10px;
+}
+.blue p {
+   font-size: 18px;
+   font-weight: 300;
+}
+.blue input[type="text"] {
+   width: 310px;
+   height: 42px;
+   border-radius: 2px;
+   border: 2px solid #444;
+   padding: 5px;
+   font-size: 18px;
+   color: #444;
+}
+.blue input[type="image"] {
+}
+.blue form input {
+   display: inline;
+   float: left;
+   margin-left: 10px;
+}
+.blue form {
+   margin-left: 70px;
+}
+.strong, .quiet {
+   font-size: 14px;
+}
+p.strong {
+   font-weight: bold;
+}
