@@ -1,18 +1,3 @@
-/* form { */
-/*    font-size: 14px; */
-/*    font-family: 'Trebuchet MS', Myriad, Arial; */
-/* } */
-/* label { */
-/*    display: block; */
-/*    margin-bottom:5px; */
-/* } */
-/* input, select, textarea { */
-/*    margin-bottom: 10px; */
-/*    border: 1px solid #333; */
-/*    padding: 5px; */
-/*    border-radius: 3px;   */
-/* } */
-
 html, body {
    padding: 0;
    margin: 0;
@@ -94,6 +79,24 @@ html, body {
 p.strong {
    font-weight: bold;
 }
+
 #secondary-form {
    display: none;
+   font-size: 16px;
+}
+#secondary-form div{
+   width: 350px;
+   padding: 20px;
+}
+#secondary-form .form-left {
+   float: left;
+}
+#secondary-form .form-right {
+   float: right;
+}
+input, select, textarea {
+   margin-bottom: 10px;
+   border: 1px solid #444;
+   padding: 5px;
+   border-radius: 3px;
 }
