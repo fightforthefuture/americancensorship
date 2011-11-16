@@ -50,7 +50,7 @@ a:hover{
 .popupheader{
 	width:900px;
 	height:60px;
-	background:url(images/modattopbg.png) no-repeat;
+	background:url(images-bb/modattopbg.png) no-repeat;
 	position:relative;
 	overflow:hidden;
 	padding:36px 0 0 0;
@@ -65,7 +65,7 @@ a:hover{
 .popupboxinfo{
 	width:820px;
 	padding:20px 20px 15px 60px;
-	background:url(images/modalboxbg.png) repeat-y;
+	background:url(images-bb/modalboxbg.png) repeat-y;
 	overflow:hidden;
 }
 .topinfo{
@@ -92,7 +92,7 @@ a:hover{
 	padding:24px 0 0 42px;
 	color:#fff;
 	overflow:hidden;
-	background:url(images/blueboxbg.png) no-repeat left top;
+	background:url(images-bb/blueboxbg.png) no-repeat left top;
 }
 .formarea p{
 	font-size:20px;
@@ -112,11 +112,11 @@ a:hover{
 	border:none;
 	font-size:20px;
 	padding:10px 0 10px 10px;
-	background:url(images/inputbg.png) no-repeat;
+	background:url(images-bb/inputbg.png) no-repeat;
 }
 .emailform input.zip{
 	width:111px;
-	background:url(images/zipinputbg.png) no-repeat;
+	background:url(images-bb/zipinputbg.png) no-repeat;
 	margin:0 0 0 7px;
 }
 .emailform input.congress{
@@ -159,7 +159,7 @@ a:hover{
 .popupbottom{
 	width:900px;
 	height:26px;
-	background:url(images/modalboxbottom.png) no-repeat;
+	background:url(images-bb/modalboxbottom.png) no-repeat;
 }
 
 
