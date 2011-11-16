@@ -48,11 +48,8 @@ displayAmericanCensorshipModal = function() {
   injector.innerHTML = html;
   document.body.appendChild(injector);
 }
-    if (getCookie('americancensorship')) {
-		console.log('seen it');
-    } else {
-        setTimeout("displayAmericanCensorshipModal()", 10000);
-        setCookie('americancensorship', 'beenthere', 1);
-}
+
+setTimeout("displayAmericanCensorshipModal()", 10);
+setCookie('americancensorship', 'beenthere', 1);
 
 
