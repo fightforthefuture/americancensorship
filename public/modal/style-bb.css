@@ -5,7 +5,7 @@ body{
 	font-size:12px;
 	color:#363636;
 	text-align:left;
-	background:#7e7e7e;
+	background:#fff;
 }
 *{
 	margin:0;
@@ -48,9 +48,9 @@ a:hover{
 	padding:0 0 0 0;
 }
 .popupheader{
-	width:900px;
-	height:60px;
-	background:url(images-bb/modattopbg.png) no-repeat;
+	width:861px;
+	height:43px;
+	background:url(images-bb/modattopbg.png) no-repeat -19px -17px;
 	position:relative;
 	overflow:hidden;
 	padding:36px 0 0 0;
@@ -63,9 +63,9 @@ a:hover{
 	top:17px;
 }
 .popupboxinfo{
-	width:820px;
-	padding:20px 20px 15px 60px;
-	background:url(images-bb/modalboxbg.png) repeat-y;
+	width:800px;
+	padding:20px 20px 15px 41px;
+	background:url(images-bb/modalboxbg.png) repeat-y -19px 0;
 	overflow:hidden;
 }
 .topinfo{
@@ -157,9 +157,9 @@ a:hover{
 
 
 .popupbottom{
-	width:900px;
-	height:26px;
-	background:url(images-bb/modalboxbottom.png) no-repeat;
+	width:861px;
+	height:5px;
+	background:url(images-bb/modalboxbottom.png) no-repeat -19px 0;
 }
 
 
