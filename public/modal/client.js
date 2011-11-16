@@ -11,9 +11,9 @@ displayAmericanCensorshipModal = function() {
   var html = '<a id="signupmodal-overlay" href="javascript:void(0)" onclick="javascript:document.getElementById(\'signupmodal-overlay\').style.display=\'none\';document.getElementById(\'signupmodal-lightbox\').style.display=\'none\';"></a>'
            + '<div id="signupmodal-lightbox">'
            + '<a id="signupmodal-close" href="javascript:void(0)" onclick="javascript:document.getElementById(\'signupmodal-overlay\').style.display=\'none\';document.getElementById(\'signupmodal-lightbox\').style.display=\'none\';">'
-           + '<img src="http://americancensorshipday.org/modal/images/close.png" title="Close"/>'
+           + '<img src="http://americancensorship.org/modal/images/close.png" title="Close"/>'
            + '</a>'
-           + '<iframe src="http://americancensorshipday.org/modal/form.html"></iframe>'
+           + '<iframe src="http://americancensorship.org/modal/form.html"></iframe>'
            + '</div>';
 
   var injector = document.createElement('div');
