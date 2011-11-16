@@ -5,7 +5,7 @@ body{
 	font-size:12px;
 	color:#363636;
 	text-align:left;
-	background:#fff;
+	background:#000;
 }
 *{
 	margin:0;
@@ -44,7 +44,7 @@ a:hover{
 
 
 .popupbox{
-	width:900px;
+	width:861px;
 	padding:0 0 0 0;
 }
 .popupheader{
