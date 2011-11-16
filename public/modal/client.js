@@ -27,7 +27,9 @@ function deleteCookie(name) {
     setCookie(name,"",-1);
 }
 
-var global_displayAmericanCensorshipModal = 0;
+if (typeof global_displayAmericanCensorshipModal == 'undefined') {
+    var global_displayAmericanCensorshipModal = 0;
+}
 
 displayAmericanCensorshipModal = function() {
   // Inject CSS
