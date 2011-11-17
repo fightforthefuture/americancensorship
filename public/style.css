@@ -166,6 +166,7 @@ a:hover{
   overflow:hidden;
   background-color:#F7F7F7;
   border-bottom:1px solid #DEDEDE;
+  border-top: 1px solid #DEDEDE;
 }
 .askheadercontent{
   width:800px;
@@ -256,7 +257,7 @@ a:hover{
 .signupcontentarea{
   width:100%;
   overflow:hidden;
-  background-color:#aaaaaa;
+  background:#cfe6fe;
 }
 .signupcontent{
   width:800px;
@@ -284,7 +285,7 @@ a:hover{
 }
 .contentcenter{
   width:800px;
-  margin-bottom:60px;
+  margin-bottom:20px;
 }
 .contentcenter .sell{
   color: #222;
@@ -535,4 +536,87 @@ a:hover{
   font-size:20px;
   text-transform:uppercase;
   font-weight:bold;
+}
+
+/* Signup Form on Homepage */
+
+#secondary-form.home {
+   font-size: 20px;
+   text-align: center;
+}
+#secondary-form.home p {
+	margin-top: 15px;
+	font-size: 14px;
+	color: #777;
+}
+
+
+#secondary-form.home .clearfix {
+   clear: both;
+}
+#secondary-form.home-container {
+   margin-left: auto;
+   margin-right: auto;
+}
+#secondary-form.home .form-left {
+   float: left;
+   width: 250px;
+   padding: 20px;
+   margin-left: 40px;
+}
+#secondary-form.home .form-right {
+   float: right;
+   width: 350px;
+   padding: 20px 20px 0 0;
+   margin-right: 40px;
+}
+#secondary-form.home input, select, textarea {
+   margin-bottom: 10px;
+   border: 1px solid #444;
+   padding: 5px;
+   border-radius: 3px;
+   font-size: 20px;
+   width: 250px;
+}
+#secondary-form.home textarea {
+   width: 350px;
+   height: 191px;
+}
+#secondary-form.home .default-text {
+   color: #222;
+}
+#secondary-form.home .default-text-active {
+   color: #999;
+}
+#secondary-form.home button[type="submit"] {
+   font-size: 20px;
+   padding: 10px;
+}
+#secondary-form.home button.css3button {
+	clear: both;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 10px 20px;
+	margin: 10px 0 0 auto;
+	background: -moz-linear-gradient(
+		top,
+		#42aaff 0%,
+		#003366);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#42aaff),
+		to(#003366));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #003366;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		/* 0px -1px 0px rgba(000,000,000,0.7), */
+		0px 1px 0px rgba(255,255,255,0.3);
 }
