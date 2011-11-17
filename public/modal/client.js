@@ -59,7 +59,9 @@ displayAmericanCensorshipModal = function() {
   }
 }
 
-setTimeout("displayAmericanCensorshipModal()", 10);
-setCookie('americancensorship', 'beenthere', 1);
-
-
+if (getCookie('americancensorship')) {
+    ;
+} else {
+    setTimeout("displayAmericanCensorshipModal()", 10);
+    setCookie('americancensorship', 'beenthere', 1);
+}
