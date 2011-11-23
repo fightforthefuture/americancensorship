@@ -115,6 +115,10 @@ a:hover{
 	color:#cccccc;
 	font-size:11px;
 }
+
+.headerbottomwrap a{
+    color: #eee;
+}
 .column01{
 	width:175px;
 	float:left;
