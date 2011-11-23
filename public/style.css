@@ -643,6 +643,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', end
 border-bottom: 1px solid #26384D;
 }
 
+#tumblr_message > p > a {
+	color: #00FF02;
+}
+
 #tumblr_message > p {
 	font-size: 16px;
 	padding: 10px 0 10px 0;
