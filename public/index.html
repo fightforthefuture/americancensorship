@@ -27,6 +27,54 @@
       })();
 
     </script>
+<script type="text/javascript">
+  	  $(document).ready(function() {
+ 		    var referer = document.referrer;
+	    	if(location.href.indexOf('#tumblr') != -1 || referer.indexOf('tumblr.com') != -1)
+	    	{
+					$('body').prepend('<div id="tumblr_message"><p>Hey <strong>Tumblr</strong> user! You can support American Censorship Day by <a href="#be_a_part">adding our button</a> to your tumblr theme. <a href="#tumblr_code"></a></div>');
+					$('#tumblr_message').delay(500).animate({opacity: 1, height: 'toggle'}, 500);
+					setCookie('amcen_referer','tumblr',30);
+					$('.other_instructions').fadeOut(500);
+	    		$('.tumblr_instructions').delay(500).fadeIn();
+	    	}
+	    	
+	    	$('.show_tumblr_code').click(function(event){
+	    		event.preventDefault();
+	    		$('.other_instructions').fadeOut(500);
+	    		$('.tumblr_instructions').delay(500).fadeIn();
+	    	});
+	    	
+	    	$('.show_other_code').click(function(event){
+	    		event.preventDefault();
+	    		$('.tumblr_instructions').fadeOut(500);
+	    		$('.other_instructions').delay(500).fadeIn();
+	    	});
+  		});
+
+  		function setCookie(c_name,value,exdays)
+			{
+				var exdate=new Date();
+				exdate.setDate(exdate.getDate() + exdays);
+				var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+				document.cookie=c_name + "=" + c_value;
+			}
+			
+			function getCookie(c_name)
+			{
+				var i,x,y,ARRcookies=document.cookie.split(";");
+				for (i=0;i<ARRcookies.length;i++)
+				{
+				  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+				  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+				  x=x.replace(/^\s+|\s+$/g,"");
+				  if (x==c_name)
+			    {
+			    	return unescape(y);
+			    }
+				}
+			}
+    </script>
   </head>
 <body>
 <!--<script type="text/javascript" src="http://americancensorship.org/js"></script>-->
@@ -133,9 +181,51 @@ The Internet Blacklist bill will open the sites I love to crushing lawsuits, and
 </div>
 <div class="askcontentarea">
   <div class="askcontent">
-    <div class="askleft col">
+    <div class="askleft col" id="be_a_part">
       <h3>Be a part of American Censorship Day</h3>
-      <ol>
+      
+      <ol id="tumblr_instructions" class="tumblr_instructions">
+      	<h4><a class="show_other_code" href="#">Don't have a tumblr? We've got you covered.</a></h4>
+        <li>Copy the code below to 'censor' your tumblr.
+        <textarea id="tumblr_code"><!-- americancensorship.org code -->
+<style>
+#amcen_banner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	height: 125px;
+	width: 125px;
+	background: transparent url(http://americancensorship.org/images/tumblr_banner_top_left.png) no-repeat;
+	text-indent: -999em;
+	text-decoration: none;
+}
+</style>
+<div id="amcen_banner"><a href="http://americancensorship.org"><span>Stop Censorship Now</span></a></div>
+<!-- end americancensorship.org code --></textarea>
+        </li>
+        <li>In your tumblr blog dashboard, click <strong>customize appearance</strong>.</li>
+        <li>In the "customize" view, click <strong>Edit HTML.</strong></li>
+        <li>Find the &lt;body&gt; tag, and paste the code from Step 1 directly after it.</li>
+        <li>Click <strong>Save</strong>.</li>
+        <li>
+          <p>Tell us that your site is participating:</p>
+          <br/>
+          <div>
+            <form action="http://act.fightforthefuture.org/page/s/american-censorship" method="post">
+              <input class="website" name="occupation" type="text" onfocus="if(this.value=='Your URL')this.value=''"onblur="if(this.value=='')this.value='Your URL'" value="Your URL" />
+              <input class="email" name="email" type="text" onfocus="if(this.value=='Your Email')this.value=''"onblur="if(this.value=='')this.value='Your Email'" value="Your Email" />              
+              <input type="image" src="images/upper-email-submit-button.png" class="send" />
+            </form>
+          </div>
+          <p style="font-size: 12px; font-weight: normal; width: 250px; margin-top: -30px;margin-left: -20px;">Tweet <strong>#sitecensored #blacklist</strong> with url of your site and we'll display it.</p>
+          <br style="clear:both;"/>
+        </li>
+      </ol>
+      
+      
+      <ol id="other_instructions" class="other_instructions">
+      	<h4><a class="show_tumblr_code" href="#">We have special tumblr instructions, too.</a></h4>
         <li>Grab the code below to 'censor' your website or logo.</li>
         <li>
           <p>Tell us that your site is participating:</p>
@@ -150,31 +240,50 @@ The Internet Blacklist bill will open the sites I love to crushing lawsuits, and
           <p style="font-size: 12px; font-weight: normal; width: 250px; margin-top: -30px;margin-left: -20px;">Tweet <strong>#sitecensored #blacklist</strong> with url of your site and we'll display it.</p>
           <br style="clear:both;"/>
         </li>
-        <li>Post one of these code snippets to your site:</li>
-      </ol>
-      <h4>Code to 'censor' your site's logo</h4>
+        <li>Post one of these code snippets to your site:
+        <h4>Code to 'censor' your site's logo</h4>
       <input class="code" type="text" value='<a style="width:400px;height:100px;vertical-align:middle;text-align:center;background-color:#000;position:absolute;z-index:5555;top:50px;left:50px;background-image:url(http://americancensorship.org/images/stop-censorship-small.png);background-position:center center;background-repeat:no-repeat;" href="http://americancensorship.org"></a>' /> 
       <p class="quiet">Simply include this image link code in the html for your site. A black censored bar will appear. Use the absolute positioning parameters to place the bar over your logo. Use width and height parameters to fit it to your site. That's it! You can also modify our image yourself if you prefer, and link to the same URL that appears in the code above.</p>
             <h4>Code to ask your visitors to contact Congress</h4>
 
       <input class="code" type="text" value='<script type="text/javascript" src="http://americancensorship.org/js"></script>' /> 
       <p class="quiet">Paste this code into your site, and your users will receive a message to contact Congress.</p>
-
-
-
+        </li>
+      </ol>
     </div>
     <div class="askright col">
-      <h3>"Censor" your own logo for this day of action</h3>
-      <p>This 'stop censorship' message leads to a page where users will contact their congressional representatives. Here's how it looks:</p>
-      <img src="images/censorship-demo.png" alt="Censorship logo example"/>
-	  <img src="images/blocked.png" alt="Censorship logo example"/>
-      <!-- <div class="quiet"> -->
-      <!--   <em>Ready to do even more?</em> -->
-      <!--   <ul> -->
-      <!--     <li><a href="#" title="Modal link">Post this modal dialog</a> to 'block' your website</a></li> -->
-      <!--     <li>Use these <a href="#" title="Graphics link">banner graphics</a> on your site to spread the message.</li> -->
-      <!--   </ul> -->
-      <!-- </div> -->
+      <h3>"Censor" your own site for this day of action</h3>
+      
+      <div class="other_instructions">
+      	<p>This 'stop censorship' message leads to a page where users will contact their congressional representatives. Here's how it looks:</p>
+	      <img src="images/censorship-demo.png" alt="Censorship logo example"/>
+		  	<a href="javascript:displayAmericanCensorshipModal()">Try it out</a>
+		  	<img src="images/blocked.png" alt="Censorship logo example"/>
+	      <!-- <div class="quiet"> -->
+	      <!--   <em>Ready to do even more?</em> -->
+	      <!--   <ul> -->
+	      <!--     <li><a href="#" title="Modal link">Post this modal dialog</a> to 'block' your website</a></li> -->
+	      <!--     <li>Use these <a href="#" title="Graphics link">banner graphics</a> on your site to spread the message.</li> -->
+	      <!--   </ul> -->
+	      <!-- </div> -->
+      </div>
+      <div class="tumblr_instructions">
+	      <p>Click <strong>customize appearance</strong>:</p>
+		  	<img src="images/tumblr_step1.png" alt="Step 1"/>
+		  	<p>Click <strong>Edit HTML</strong>:</p>
+		  	<img src="images/tumblr_step2.png" alt="Step 2"/>
+		  	<p>Paste our code <strong>after the &lt;body&gt; tag</strong>:</p>
+		  	<img src="images/tumblr_step3.png" alt="Step 3"/>
+		  	<p>How it looks:</p>
+	      <img src="images/tumblr_view.png" alt="Censorship logo example"/>
+	      <!-- <div class="quiet"> -->
+	      <!--   <em>Ready to do even more?</em> -->
+	      <!--   <ul> -->
+	      <!--     <li><a href="#" title="Modal link">Post this modal dialog</a> to 'block' your website</a></li> -->
+	      <!--     <li>Use these <a href="#" title="Graphics link">banner graphics</a> on your site to spread the message.</li> -->
+	      <!--   </ul> -->
+	      <!-- </div> -->
+      </div>
     </div>
     <br style="clear:both;"/>
   </div>
