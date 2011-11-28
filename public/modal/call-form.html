@@ -1,113 +1,55 @@
-<!DOCTYPE html>
-<html name="We're sorry we're covering your favorite site, but what if it was the government, not us- and there was no close button?  Thanks guys!">
-  <head>
-  <script src="http://cdn.optimizely.com/js/14211444.js"></script>
-    <link href="/modal/style.css" rel="stylesheet" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
-    <script>
-      function go_foreign(){
-        document.getElementById('id_zip').value = '20000';
-        document.getElementById('row_zip').style.display = 'none';
-        document.getElementById('row_country').style.display = 'table-row';
-        document.getElementById('id_country').focus();
-      }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Widget</title>
+<link href="/modal/call-style.css" rel="stylesheet" type="text/css" />
+<link href="/modal/call-fonts.css" rel="stylesheet" type="text/css" />
 
-      $(document).ready(function() {
-        $("#write-congress").click(function() {
-          $("#initial-form").fadeOut();
-          $("#secondary-form").fadeIn();
-        });
-
-        $(".default-text").focus(function(){
-          if ($(this).val() == $(this)[0].title){
-            $(this).removeClass("default-text-active");
-            $(this).val("");
-          }
-        });
-
-        $(".default-text").blur(function(){
-          if ($(this).val() == ""){
-            $(this).addClass("default-text-active");
-            $(this).val($(this)[0].title);
-          }
-        });
-
-        $(".default-text").blur();  
-      });
-    </script>
-<title>Form</title>
-<style>
-#secondary-form-container input {padding: 10px;}
-
+<style type="text/css" media="screen">
+	.bebas {font: 24px/32px 'BebasNeueRegular', Arial, sans-serif;}
+	
+	.header h1.bebas {letter-spacing: 1.5px;}
+	
 </style>
-  </head>
-  <body>
-    <div id="modal">
-      <div id="modal-top">        
-        <img class="logo-left" src="/modal/images/leftlogo.png">
-         <a href="http://americancensorship.org" target="_top" title="Check out American Censorship.">
-           <img class="title-text" src="/modal/images/titletxt1.png" />
-         </a>
-        <img class="logo-right" src="/modal/images/rightlogo.png">
-      </div>
-      <div id="modal-middle">
-        <div id="initial-form">
-          <p class="top">Congress needs to hear from all of us or this bill is going to pass!</p>
-		<div id="secondary-form-container">
-        <form action="http://centerforrights.mcommons.com/profiles/join" method="POST">
-        <div class="left_form" style="float: left; width: 400px;">
-
-              <input type="hidden" name="opt_in_path[]" value="90341" />
-              <input type="hidden" name="redirect_to" value="http://mobilecommons.com/redirect_to_instructions" />
-              <input type="hidden" name="mconnect" value="14231" />
-              <input type="text" name="person[email]" onfocus="if(this.value=='Email')this.value=''"onblur="if(this.value=='')this.value='Email'" value="Email"/><br />
-       
-              <input type="text" name="person[postal_code]" onfocus="if(this.value=='Zip Code')this.value=''"onblur="if(this.value=='')this.value='Zip Code'" value="Zip Code"/><br />
-              <input type="text" name="person[phone]" onfocus="if(this.value=='Phone Number')this.value=''"onblur="if(this.value=='')this.value='Phone Number'" value="Phone Number"/><br />
-
-        <input id="person_street1" name="person[street1]" onfocus="if(this.value=='Street Address')this.value=''"onblur="if(this.value=='')this.value='Street Address'" value="Street Address" size="30" type="text" />
-              
-              </dd>
-       </div>
-        <div class="right_form" style="float: right; width: 400px;">
-<dd>
-       
-
-              <input type="submit" value="Call Congress" />
-        </div>
-        <br style="clear: both;" />
-            </form>
-    <a href="http://mobilecommons.com/terms" style="font-size:75%">Msg & Data Rates May Apply</a> 
-
-      
-	        <p class="strong quiet">
-	          <a href="http://fightforthefuture.org" target="_top" title="Fight for the Future">Fight for the Future</a> won't share your email with anyone, but we will contact you about campaigns.
-			 <a href="http://americancensorship.org" target="_top" title="American Censorship">
-	            Join the Protest
-	          </a>
-          </p>
-
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<h1 class="bebas">CORPORATIONS WILL BE EMPOWERED TO CENSOR THE WEB THIS WEEK.</h1>
+		<h1 class="bebas">IT'S TIME TO GIVE A DAMN. <span>IT'S TIME TO CALL CONGRESS.</span></h1>
+	</div>
+	<div class="maincontent">
+		<div class="topinfo">
+			<h1 class="bebas">STOP AMERICAN CENSORSHIP TODAY</h1>
+			<p>We need 100,000 people to call. Pick up the phone</p>
 		</div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript">
-	var _sf_async_config={uid:30346,domain:"americancensorship.org"};
-	(function(){
-	  function loadChartbeat() {
-	    window._sf_endpt=(new Date()).getTime();
-	    var e = document.createElement('script');
-	    e.setAttribute('language', 'javascript');
-	    e.setAttribute('type', 'text/javascript');
-	    e.setAttribute('src',
-	       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
-	       "js/chartbeat.js");
-	    document.body.appendChild(e);
-	  }
-	  var oldonload = window.onload;
-	  window.onload = (typeof window.onload != 'function') ?
-	     loadChartbeat : function() { oldonload(); loadChartbeat(); };
-	})();
-	</script>
-  </body>
+		<div class="counterarea" style="display: none;">
+			<div class="counterbox bebas"><span>22,323 Calls today</span></div>
+			<img src="/modal/call-images/framebg.png" alt="" />
+			<h4 class="bebas">GOAL 100,000</h4>
+		</div>
+		<div class="bottomform">
+			<p>Once you submit this form, we will give you talking points and connect <br /> your phone to Sen. Reid's office</p>
+			<div class="formlist">
+				<form action="http://centerforrights.mcommons.com/profiles/join" method="POST">
+		        <div class="left_form" style="float: left; width: 400px;">
+
+		              <input type="hidden" name="opt_in_path[]" value="90341" />
+		              <input type="hidden" name="redirect_to" value="http://mobilecommons.com/redirect_to_instructions" />
+		              <input type="hidden" name="mconnect" value="14231" />
+				<input type="text" name="person[email]" onfocus="if(this.value=='Email')this.value=''"onblur="if(this.value=='')this.value='Email'" value="Email"/><br />
+
+	              <input type="text" name="person[postal_code]" onfocus="if(this.value=='Zip Code')this.value=''"onblur="if(this.value=='')this.value='Zip Code'" value="Zip Code"/><br />
+	              <input type="text" name="person[phone]" onfocus="if(this.value=='Phone Number')this.value=''"onblur="if(this.value=='')this.value='Phone Number'" value="Phone Number"/><br />
+			</form>
+			</div>
+			
+			<div class="formlistsubmit">
+				<input type="text" value="Connect Me" class="submit bebas" />
+			</div>
+		</div>
+	</div>
+</div>
+</body>
 </html>
