@@ -67,7 +67,7 @@ a:hover{
 }
 .maincontent{
 	width:512px;
-	padding:20px 38px 20px 38px;
+	padding:20px 38px 0px 38px;
 	overflow:hidden;
 }
 .topinfo{
@@ -201,3 +201,21 @@ li {
 }
 
 #talkingpoints {padding-top: 20px; font-size: 18px; line-height: 1.5;}
+
+p.embed {
+    float: left; 
+    font-size: 75%; 
+    text-align: center; 
+    width: 100%; 
+    margin-bottom: 0;
+	text-decoration: underline;
+	display: none;
+}
+
+.thecodez {
+	display: none;
+	float: left;
+	font-size: 75%;
+}
+
+.thecodez textarea {font-size: 75%; text-align: left;}
