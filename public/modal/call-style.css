@@ -165,7 +165,7 @@ a:hover{
 	padding:0 0 0 0;
 	overflow:hidden;
 }
-.formlistsubmit input.submit{
+.formlistsubmit button.submit{
 	width:511px;
 	height:53px;
 	border:none;
@@ -178,6 +178,7 @@ a:hover{
 	cursor:pointer;
 	background: url(call-images/contactbtn.png) no-repeat;
 	margin-left: -3px;
+	margin-top: 10px;
 }
 .bottombg{
 	width:588px;
