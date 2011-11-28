@@ -164,6 +164,7 @@ a:hover{
 	width:512px;
 	padding:0 0 0 0;
 	overflow:hidden;
+    float: left;
 }
 .formlistsubmit button.submit{
 	width:511px;
