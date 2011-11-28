@@ -36,6 +36,10 @@
       });
     </script>
 <title>Form</title>
+<style>
+#secondary-form-container input {padding: 10px;}
+
+</style>
   </head>
   <body>
     <div id="modal">
@@ -50,21 +54,26 @@
         <div id="initial-form">
           <p class="top">Congress needs to hear from all of us or this bill is going to pass!</p>
 		<div id="secondary-form-container">
-        <form action="http://default.mcommons.com/profiles/join" method="POST">
+        <form action="http://centerforrights.mcommons.com/profiles/join" method="POST">
+        <div class="left_form" style="float: left; width: 400px;">
+
+              <input type="hidden" name="opt_in_path[]" value="90341" />
               <input type="hidden" name="redirect_to" value="http://mobilecommons.com/redirect_to_instructions" />
-              <input type="text" name="person[first_name]" onfocus="if(this.value=='First Name')this.value=''"onblur="if(this.value=='')this.value='First Name'" value="First Name"/><br />
-              <input type="text" name="person[last_name]" onfocus="if(this.value=='Last Name')this.value=''"onblur="if(this.value=='')this.value='Last Name'" value="Last Name"/><br />
+              <input type="hidden" name="mconnect" value="14231" />
               <input type="text" name="person[email]" onfocus="if(this.value=='Email')this.value=''"onblur="if(this.value=='')this.value='Email'" value="Email"/><br />
+       
               <input type="text" name="person[postal_code]" onfocus="if(this.value=='Zip Code')this.value=''"onblur="if(this.value=='')this.value='Zip Code'" value="Zip Code"/><br />
               <input type="text" name="person[phone]" onfocus="if(this.value=='Phone Number')this.value=''"onblur="if(this.value=='')this.value='Phone Number'" value="Phone Number"/><br />
               
-              <input type="checkbox" name="mconnect" value="4" checked="true">Call Me Now<br>
+       </div>
+        <div class="right_form" style="float: right; width: 400px;">
 
-              <label>Invite a Friend:<br /><input type="text" name="friends[]"/></label><br />
-              <input type="hidden" name="friends_opt_in_path" value="5" />
-              
+       
+              </dd>
 
               <input type="submit" value="Call Congress" />
+        </div>
+        <br style="clear: both;" />
             </form>
     <a href="http://mobilecommons.com/terms" style="font-size:75%">Msg & Data Rates May Apply</a> 
 
@@ -80,7 +89,7 @@
         </div>
       </div>
     </div>
-	<script type="text/javascript">
+    <script type="text/javascript">
 	var _sf_async_config={uid:30346,domain:"americancensorship.org"};
 	(function(){
 	  function loadChartbeat() {
