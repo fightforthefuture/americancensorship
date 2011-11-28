@@ -187,20 +187,15 @@ a:hover{
 
 
 
+ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+li {
+    padding-left: 10px;
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#talkingpoints {padding-top: 20px; font-size: 18px; line-height: 1.5;}
