@@ -148,7 +148,16 @@ a.next, .formlist input{
 	font-size:18px;
 	background:url(call-images/textareabg.png) no-repeat;
 	margin-top: 10px;
+	display: block;
 }
+
+@-moz-document url-prefix() {
+	.formlist input
+	{ 
+		padding: 6px 0 5px 15px;
+	}
+}
+
 
 .formlist textarea{
 	font-family:Arial, Helvetica, sans-serif;
