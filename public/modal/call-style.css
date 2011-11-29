@@ -6,6 +6,8 @@ body{
 	color:#fefefe;
 	text-align:left;
 	background:#fff;
+	background:url(call-images/bg.gif) repeat;
+	
 }
 *{
 	margin:0;
@@ -44,7 +46,6 @@ a:hover{
 	margin:0 auto;
 	padding:0 0 0 0;
 	overflow:hidden;
-	background:url(call-images/bg.gif) repeat;
 }
 .header{
 	width:588px;
@@ -137,7 +138,7 @@ a:hover{
 	padding:0 0 10px 6px;
 	overflow:hidden;
 }
-.formlist input{
+a.next, .formlist input{
 	float:left;
 	width:486px;
 	height:31px;
@@ -166,7 +167,7 @@ a:hover{
 	overflow:hidden;
     float: left;
 }
-.formlistsubmit button.submit{
+a.next, .formlistsubmit button.submit{
 	width:511px;
 	height:53px;
 	border:none;
@@ -181,6 +182,8 @@ a:hover{
 	margin-left: -3px;
 	margin-top: 10px;
 }
+
+a.next {padding-top: 11px; letter-spacing: 1.5;}
 .bottombg{
 	width:588px;
 	height:15px;
@@ -245,3 +248,5 @@ p.embed {
 	font-size: 13px;
 }
 .thecodez textarea {font-size: 60%; text-align: left; color: #666;}
+
+.social {margin: 0 auto; text-align: center;}
