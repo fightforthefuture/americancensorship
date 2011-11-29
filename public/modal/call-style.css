@@ -187,8 +187,6 @@ a:hover{
 	background:url(call-images/bottombg.png) no-repeat;
 }
 
-
-
 ul {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -210,12 +208,38 @@ p.embed {
     margin-bottom: 0;
 	text-decoration: underline;
 	display: none;
+	cursor: pointer;
 }
 
 .thecodez {
-	display: none;
 	float: left;
-	font-size: 75%;
+	position: absolute;
+	background: rgba(0,0,0, .9);
+	width: 544px;
+	padding-left: 44px;
+	margin-top: 89px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin-left: -44px;
+	height: 120px;
+	font-size: 130%;
+	font-weight: bold;
+	display: none;
 }
 
-.thecodez textarea {font-size: 75%; text-align: left;}
+.thecodez p {letter-spacing: 1.8px;}
+
+.closecodez {
+	position: absolute;
+	width: 80px;
+	height: 20px;
+	left: 508px;
+	top: 0px;
+	padding-top: 5px;
+	background: red;
+	z-index: 9;
+	text-align: center;
+	cursor: pointer;
+	font-size: 13px;
+}
+.thecodez textarea {font-size: 60%; text-align: left; color: #666;}

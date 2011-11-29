@@ -59,10 +59,9 @@
 						</form>
                         <p class="embed">Embed On Your Website</p>
                         <div class="thecodez">
-							<p>Just copy and paste the code below into your website or blog to help get the message out</p>
-                            <textarea>
-								<iframe src="http://americancensorship.org/callwidget" width="588" height="625" border="0"></iframe>
-                            </textarea>
+							<div class="closecodez">CLOSE</div>
+							<p class="bebas">Just copy and paste the code below into your<br />website or blog to help get the message out</p>
+                            <textarea><iframe src="http://americancensorship.org/callwidget" width="588" height="625" border="0"></iframe></textarea>
 		</div>
 	</div>
 </div>
@@ -71,8 +70,12 @@
 $('.embed').show();
 
 $('.embed').click(function() {
-		$('.thecodez').show().slideDown();
+		$('.thecodez').fadeIn();
 	})
+
+$('.closecodez').click(function(){
+	$('.thecodez').fadeOut();
+})
 
 </script>
 
