@@ -170,6 +170,7 @@ a.next, .formlist input{
 	color:#bebebe;
 	font-size:18px;
 	background:url(call-images/textareabg.png) no-repeat;
+  margin-top: 10px;
 }
 .formlistsubmit{
 	width:512px;
@@ -263,3 +264,10 @@ p.embed {
 .social {margin: 0 auto; text-align: center;}
 
 p.learn {text-align: center; font-size: 13px; float: left; letter-spacing: 1px;}
+
+.bebas {
+   font: 24px/32px 'BebasNeueRegular', Arial, sans-serif;
+}
+.header h1.bebas {
+   letter-spacing: 1.5px;
+}	
