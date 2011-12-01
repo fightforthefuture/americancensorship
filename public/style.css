@@ -672,6 +672,22 @@ border-bottom: 1px solid #26384D;
 	display: none;
 }
 
-
 .callinform {width: 100%; margin: 0 auto; text-align: center;}
 .callinform iframe {margin: 20px; border: none;}
+
+.footer > h2 {
+	font-size: 22px;
+}
+
+.footer > h3 {
+	font-size: 20px;
+}
+
+.footer > ul#hiring {
+	font-size: 22px;
+	margin: 10px 0 10px 0;
+}
+
+.footer > ul#hiring > li {
+	margin: 5px 0 5px 0;
+}
