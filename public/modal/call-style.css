@@ -125,13 +125,14 @@ a:hover{
 }
 .bottomform{
 	width:512px;
-	padding:20px 0 0 0;
+	padding: 20px 0 0 0;
 	overflow:hidden;
 	background:url(call-images/bdr.png) repeat-x top left;
 }
 .bottomform p{
 	text-align:center;
-	padding:0 0 15px 0;
+	/* padding:0 0 15px 0; */
+  padding: 5px;
 	line-height:24px;
 }
 .formlist{
@@ -224,7 +225,6 @@ p.embed {
     margin-bottom: -10px;
 	margin-top: 5px;
 	text-decoration: underline;
-	display: none;
 	cursor: pointer;
 }
 
@@ -272,3 +272,36 @@ p.learn {text-align: center; font-size: 13px; float: left; letter-spacing: 1px;}
 .header h1.bebas {
    letter-spacing: 1.5px;
 }	
+
+/* Disclaimer Text */
+.disclaimer {
+   float: left;
+   text-align: center;
+   display: block;
+   width: 100%;
+   font-size: 75%;
+}
+
+/* Secondary Sell: text below the submit button for secondary actions. */
+.secondary-sell {
+   padding: 10px;
+   text-align: center;
+}
+.secondary-sell a {
+   color: #fff;
+   text-decoration: underline;
+}
+.secondary-sell a:hover {
+   color: #ddd;
+}
+.secondary-sell p {
+   font-size: 18px;
+}
+.secondary-sell .left {   
+   float: left;
+   margin-left: 50px;
+}
+.secondary-sell .right {
+   float: right;
+   margin-right: 50px;
+}
