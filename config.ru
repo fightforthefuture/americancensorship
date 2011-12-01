@@ -3,5 +3,5 @@ use Rack::Static , :urls => { "/" => "index.html", "/index.html" => "index.html"
 run Rack::URLMap.new({
   "/"      => Rack::Directory.new("public"),
   "/modal" => Rack::Directory.new("public/modal"),
-  "/modal/petition-congress" => Rack::Directory.new("public/modal/petition-congress")
+  "/modal/state-dept-petition" => Rack::Directory.new("public/modal/state-dept-petition")
 })
