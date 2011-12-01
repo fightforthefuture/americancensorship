@@ -426,6 +426,10 @@ a:hover{
 	padding:0 0 0 0;
 	text-transform:uppercase;
 }
+.testimonialwrap h4 + p{
+	font-size: 18px;
+	margin-top: 5px;
+}
 .testimoniallist{
 	width:380px;
 	padding:20px 0 0 0;
