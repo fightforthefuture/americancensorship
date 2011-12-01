@@ -217,10 +217,11 @@ ol li {list-style-type: decimal;}
 
 p.embed {
     float: left; 
-    font-size: 75%; 
+    font-size: 120%; 
     text-align: center; 
     width: 100%; 
-    margin-bottom: 0;
+    margin-bottom: -10px;
+	margin-top: 5px;
 	text-decoration: underline;
 	display: none;
 	cursor: pointer;
