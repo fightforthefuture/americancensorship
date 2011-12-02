@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Petition the State Department</title>
+    <script src="http://cdn.optimizely.com/js/14211444.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
     <link href="/modal/call-fonts.css" rel="stylesheet" type="text/css">
     <link href="/modal/call-style.css" rel="stylesheet" type="text/css">
@@ -112,6 +113,24 @@
       $('.closecodez').click(function(){
         $('.thecodez').fadeOut();
       })
+    </script>
+    <script type="text/javascript">
+      var _sf_async_config={uid:30346,domain:"americancensorship.org"};
+      (function(){
+        function loadChartbeat() {
+          window._sf_endpt=(new Date()).getTime();
+          var e = document.createElement('script');
+          e.setAttribute('language', 'javascript');
+          e.setAttribute('type', 'text/javascript');
+          e.setAttribute('src',
+             (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+             "js/chartbeat.js");
+          document.body.appendChild(e);
+        }
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ?
+           loadChartbeat : function() { oldonload(); loadChartbeat(); };
+      })();
     </script>
   </body>
 </html>
