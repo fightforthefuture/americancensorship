@@ -161,7 +161,7 @@ a.next, .formlist input{
 }
 
 
-.formlist textarea{
+.formlist textarea, .thecodez textarea {
 	font-family:Arial, Helvetica, sans-serif;
 	float:left;
 	width:486px;
@@ -230,14 +230,17 @@ p.embed {
 
 .thecodez {
 	float: left;
-	position: absolute;
+	position: fixed;
 	background: rgba(0,0,0, .9);
 	width: 544px;
 	padding-left: 44px;
 	margin-top: -200px;
 	padding-top: 40px;
 	padding-bottom: 20px;
-	margin-left: -44px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 	height: 100%;
 	font-size: 130%;
 	font-weight: bold;
@@ -260,7 +263,14 @@ p.embed {
 	cursor: pointer;
 	font-size: 13px;
 }
-.thecodez textarea {font-size: 60%; text-align: left; color: #666; margin-top: 0; margin-bottom: 10px;}
+.thecodez textarea {
+  font-size: 60%;
+  text-align: left;
+  color: #666;
+  margin-top: 0;
+   margin-bottom: 10px;
+   display: block;
+}
 
 .social {margin: 0 auto; text-align: center;}
 
