@@ -2,7 +2,7 @@
 <!-- test -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <script src="//cdn.optimizely.com/js/14211444.js"></script>
+    <script src="http://cdn.optimizely.com/js/14211444.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>American Censorship Day - Call to Stop SOPA and PROTECT IP</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -16,7 +16,11 @@
     <meta property="fb:page_id" content="283481148338685" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
-    <script src="http://americancensorship.org/modal/call-client.js"></script>
+<!--    <script src="http://americancensorship.org/modal/call-client.js"></script>
+-->
+    <style>
+    .form-test {display: none;}
+    </style>
 
     <script type="text/javascript">
 
@@ -111,7 +115,8 @@
 </div>
 
 <div class="callinform" id="call-your-senators">
-    <iframe src="http://americancensorship.org/callwidget" style="width: 100%; margin: 0 auto;" height="595" border="0"></iframe>
+    <iframe id="call-form" class="form-test" src="/modal/a-b/call-form.html" style="width: 100%; margin: 0 auto;" height="595" border="0"></iframe>
+    <iframe id="petition-form" class="form-test" src="/modal/a-b/email-form.html" style="width: 100%; margin: 0 auto;" height="775" border="0"></iframe>
 </div> 
 
 
@@ -135,7 +140,7 @@
 
 
 
-<div class="signupcontentarea" style="display: none;">
+<div class="signupcontentarea form-test" id="emailz-form">
   <div class="signupcontent">
     <div class="contentcenter">
       <div class="redtag">
@@ -145,7 +150,7 @@
       Congress is trying to use the jobs crisis as an excuse to censor the internet. Tell them <strong>NO WAY</strong>, sign up now for the massive call-in day next week.
       </p>
       <div class="signup">
-        <form action="http://act.fightforthefuture.org/page/s/american-censorship" method="post">
+        <form action="http://act.fightforthefuture.org/page/s/american-censorship" method="post" id="ssignup">
           <input class="email" name="email" type="text"onfocus="if(this.value=='Your Email')this.value=''"onblur="if(this.value=='')this.value='Your Email'" value="Your Email">
 				  <input type="image" src="images/fresh-signup-button.png" class="send" />
         </form>
@@ -735,5 +740,17 @@ $(document).ready(function() {
 </script>
 
 <div class="footerinforight" style="text-align: center; margin-bottom: 20px;"><p>Fight for the Future &copy; 2011 | <a href="http://fightforthefuture.org/privacy/">View our privacy policy</a></p></div>
+
+<script>
+    var trackingFn = function() {
+      window.optimizely = window.optimizely || [];
+      window.optimizely.push(["trackEvent", "SubmittedForm"]);
+    }
+
+    $('#ssignup').submit(function() {
+      trackingFn();
+    });
+</script>
+ 
 </body>
 </html>
