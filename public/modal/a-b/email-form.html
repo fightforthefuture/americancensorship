@@ -134,6 +134,21 @@ The Internet Blacklist bill will open the sites I love to crushing lawsuits, and
       $('.closecodez').click(function(){
         $('.thecodez').fadeOut();
       })
+
+    var trackingFn = function() {
+      window.optimizely = window.optimizely || [];
+      window.optimizely.push(["trackEvent", "SubmittedForm"]);
+    }
+
+    $('#callin').submit(function() {
+      trackingFn();
+    });
+ 
+
+
+
+
+
     </script>
   </body>
 </html>
