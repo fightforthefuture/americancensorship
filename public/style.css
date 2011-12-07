@@ -691,3 +691,19 @@ border-bottom: 1px solid #26384D;
 .footer > ul#hiring > li {
 	margin: 5px 0 5px 0;
 }
+
+#supporters-wrapper {
+	width: 960px;
+}
+
+#supporters-wrapper ul li {
+	float: left;
+	width: 33%;
+	text-align: center;
+	font-size: 1.2em;
+	margin: 0 0 10px 0;
+}
+
+#supporters-wrapper ul li img {
+	margin-left: 10px;
+}
