@@ -131,7 +131,7 @@ html, body {
    text-align: center;
    background-color: #f3f3f3;
    border-top: 5px solid #ed2024;
-   border-bottom: 5px solid #ed2024;
+/*   border-bottom: 5px solid #ed2024;*/
 }
 #top-priority h2 {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
@@ -192,4 +192,8 @@ html, body {
 	background: url(/modal/call-images/contactbtn.png) no-repeat;
 	margin-left: -3px;
 	margin-top: 10px;
+}
+
+.maincontentarea {
+	border-top: 10px solid #787878;
 }
