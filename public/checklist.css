@@ -1,0 +1,195 @@
+@font-face {font-family: 'Museo-700';src: url('fonts/197E39_0_0.eot');src: url('fonts/197E39_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/197E39_0_0.woff') format('woff'),url('fonts/197E39_0_0.ttf') format('truetype');}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('/fonts/BebasNeue-webfont.eot');
+    src: url('/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/BebasNeue-webfont.woff') format('woff'),
+         url('/fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('/fontsBebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   font-family: "Helvetica", "Arial", sans-serif;
+}
+#wrapper {
+   color: #ed2024;
+   height: 100%;
+   width: 100%;
+}
+#container {
+   width: 1120px;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+#checklist {
+   background-color: #777;
+}
+#checklist .byline {
+   color: #fff;
+}
+.checklist-item {
+   margin-left: 100px;
+   margin-right: 100px;
+   padding: 20px;
+  background-color:#ffffff;
+  border-width:2px;
+  border-color:#999999;
+  -moz-border-radius:30px;
+  -webkit-border-radius:30px;
+  border-radius:30px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow:inset 0px 0px 7px #000000;
+  -webkit-box-shadow:inset 0px 0px 7px #000000;
+  box-shadow:inset 0px 0px 7px #000000;
+  /*Inner elements should not cover inner shadows*/
+  /*Chrome renders inset shadows incorrectly with border-radius*/
+  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+  opacity:0.1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  /*-ms-filter must come before filter*/
+  filter: alpha(opacity=90);
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*All filters must be placed together*/
+}
+#header {
+   text-align: center;
+   background-color: #333333;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+#header h1 {
+   margin: 0;
+   padding: 0;
+   font-family: "Museo-700", "Helvetica", "Arial", sans-serif;
+   font-size: 60px;
+   color: #ed2024;
+   text-shadow: 2px 2px 0px #000000;
+   filter: dropshadow(color=#000000, offx=2, offy=2);
+}
+#header p {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 300;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+#header-more {
+   font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
+   background-color: #666666;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+   border-top: 2px solid #878787;
+   /* Bottom shadowed border */
+   -moz-box-shadow:0 2px 5px #000;
+   -webkit-box-shadow: 0 2px 5px #000;
+   box-shadow: 0 2px 5px #000;
+}
+#header-more h2 {
+   color: #fff;
+   font-weight: 200;
+   letter-spacing: 1.25px;
+   text-shadow: 1px 2px 0px #000000;
+   margin: 10px;
+   padding: 0;
+}
+#header-more ul {
+   list-style-type: none;
+   margin: 10px;
+   padding: 10px;
+   width: auto;
+   display: inline;
+}
+#header-more ul li {
+   text-align: center;
+   display: inline;
+   width: 250px;
+   float: left;
+   margin-left: 20px;
+}
+#header-more ul li p {
+   margin: 0;
+   padding: 5px;
+   font-size: 16px;
+   font-weight: 200;
+   letter-spacing: 0.1em;
+   text-shadow: 1px 2px 0px #000000;
+}
+#header-more ul li img {
+   -moz-box-shadow: 0px 0px 9px #000000;
+   -webkit-box-shadow: 0px 0px 9px #000000;
+   box-shadow: 0px 0px 9px #000000;
+}
+
+#top-priority {
+   text-align: center;
+   background-color: #f3f3f3;
+   border-top: 5px solid #ed2024;
+   border-bottom: 5px solid #ed2024;
+}
+#top-priority h2 {
+   font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
+   text-shadow: 1px 1px 0px #222;
+   font-size: 60px;
+   padding: 0;
+   margin: 10px;
+}
+#top-priority p {
+   color: #333;
+   font-size: 26px;
+}
+#top-priority form {
+   /* margin-left: 300px; */
+   text-align: center;
+   display: inline;
+}
+#top-priority input {
+   width: 300px;
+   display: block;
+   margin: 10px;
+   margin-left: 400px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #bebebe;
+   font-size: 18px;
+   background: 0;
+   background: #fff;
+   border: 1px solid #555;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -moz-box-shadow:inset 1px 1px 5px #b3b3b3;
+   -webkit-box-shadow:inset 1px 1px 5px #b3b3b3;
+   box-shadow:inset 1px 1px 5px #b3b3b3;
+   padding: 10px;
+}
+.default-text {
+   color: #333;
+}
+.default-text-active {
+   color: #bebebe;
+}
+#top-priority .small {
+   font-size: 14px;
+}
+#top-priority button {
+   font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
+	width:511px;
+	height:53px;
+	border:none;
+	padding:0;
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	text-align: center;
+	letter-spacing: 1.5px;
+	cursor:pointer;
+	background: url(/modal/call-images/contactbtn.png) no-repeat;
+	margin-left: -3px;
+	margin-top: 10px;
+}
