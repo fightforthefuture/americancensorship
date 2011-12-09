@@ -69,9 +69,6 @@ a:hover{
 	color:#cccccc;
 	text-decoration:none;
 }
-.headertopwrap a.social{
-  padding-left:10px;
-}
 .headertopwrap .social img{
   height:25px;
 }
@@ -706,4 +703,22 @@ border-bottom: 1px solid #26384D;
 
 #supporters-wrapper ul li img {
 	margin-left: 10px;
+}
+
+.headertopwrap > ul > li, .headertopwrap p {
+	float: left;
+	height: 40px;
+}
+
+.headertopwrap > ul > li {
+	margin-right: 10px;
+}
+
+.headertopwrap p {
+	width: 725px;
+	padding-top: 5px;
+}
+
+.headertopwrap .fb-like {
+	padding-top: 2px;
 }
