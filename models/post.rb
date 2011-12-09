@@ -1,1 +1,2 @@
-class Post < Sequel::Model; end
+class Post < Sequel::Model
+end

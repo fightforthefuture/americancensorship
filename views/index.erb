@@ -115,20 +115,14 @@
 </div>
 
 <div id="censor-text">
-  <div class="left">
-    <textarea class="input-text">I'm censoring my posts in protest!</textarea>
-  </div>
-  <div class="right">
-    <div class="censored-text">
-      foo foo foo
-    </div>
-    <button>
-      Write Congress Now
+  <form method="post" action="/censor">
+    <textarea class="input-text" title="Text To Censor"></textarea>
+    <input title="Name" type="text" name="name" required="required">
+    <input title="Email" type="email" name="email" required="required">
+    <button type="submit">
+      Censor My Post
     </button>
-    <button>
-      Learn More
-    </button>
-  </div>
+  </form>
 </div>
 
 <div class="callinform" id="call-your-senators">
