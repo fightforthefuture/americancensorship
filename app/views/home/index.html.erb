@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- test -->
+<!ERB Yo>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <script src="http://cdn.optimizely.com/js/14211444.js"></script>
@@ -126,9 +126,9 @@
 
 <div id="censor-text">
   <%= form_for @post do |f| %>
-    <%= f.text_area :post %>
-    <%= f.text_field :name %>
-    <%= f.text_field :email %>
+    <%= f.text_area :post, :placeholder => 'The post you want censored' %>
+    <%= f.text_field :name, :placeholder => 'Your Name' %>
+    <%= f.text_field :email, :placeholder => 'Your Email' %>
     <%= f.submit "I'm Censoring my posts in Protest!" %>
   <% end %>
 </div>
