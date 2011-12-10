@@ -124,6 +124,15 @@
 	</div>
 </div>
 
+<div id="censor-text">
+  <%= form_for @post do |f| %>
+    <%= f.text_area :post %>
+    <%= f.text_field :name %>
+    <%= f.text_field :email %>
+    <%= f.submit "I'm Censoring my posts in Protest!" %>
+  <% end %>
+</div>
+
 <div class="callinform" id="call-your-senators">
     <iframe id="call-form" class="form-test" src="/modal/a-b/call-form.html" style="width: 100%; margin: 0 auto;" height="595" border="0"></iframe>
     <iframe id="petition-form" class="form-test" src="/modal/a-b/email-form.html" style="width: 100%; margin: 0 auto;" height="775" border="0"></iframe>
