@@ -12,7 +12,7 @@
 html, body {
    margin: 0;
    padding: 0;
-   background-color: #000;
+   background: #000 url(/images/ac2-background.png);
    font-family: "Helvetica", "Arial", sans-serif;
 }
 #wrapper {
@@ -135,6 +135,7 @@ html, body {
    background: url(/images/checked-background.png);
    border-top: 5px solid #ed2024;
 /*   border-bottom: 5px solid #ed2024;*/
+   margin-top: 10px;
 }
 #top-priority h2 {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
@@ -185,7 +186,7 @@ html, body {
 }
 #top-priority button {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
-	width:511px;
+	width:349px;
 	height:53px;
 	border:none;
 	padding:0;
@@ -195,11 +196,11 @@ html, body {
 	text-align: center;
 	letter-spacing: 1.5px;
 	cursor:pointer;
-	background: url(/modal/call-images/contactbtn.png) no-repeat;
+	background: url(/images/ac2-button.png) no-repeat;
 	margin-left: -3px;
 	margin-top: 10px;
 }
-
+#top-priority button span {vertical-align:top; margin-top: 9px; display: inline-block;}
 .maincontentarea {
 	border-top: 10px solid #787878;
 }
