@@ -115,14 +115,12 @@
 </div>
 
 <div id="censor-text">
-  <form method="post" action="/censor">
-    <textarea class="input-text" title="Text To Censor"></textarea>
-    <input title="Name" type="text" name="name" required="required">
-    <input title="Email" type="email" name="email" required="required">
-    <button type="submit">
-      Censor My Post
-    </button>
-  </form>
+  <%= form_for @post do |f| %>
+    <%= f.text_area :post %>
+    <%= f.text_field :name %>
+    <%= f.text_field :email %>
+    <%= f.submit "I'm Censoring my posts in Protest!" %>
+  <% end %>
 </div>
 
 <div class="callinform" id="call-your-senators">
