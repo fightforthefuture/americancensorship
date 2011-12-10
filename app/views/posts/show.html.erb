@@ -1,0 +1,5 @@
+Write Congress! And we'll decode your form!
+
+<% if @post.present? %>
+  <%= link_to uncensor_post_path(@post) %>
+<% end %>
