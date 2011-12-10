@@ -20,8 +20,8 @@ html, body {
    height: 100%;
    width: 100%;
 }
+.wrap {width: 1120px; margin: 0 auto;}
 #container {
-   width: 1120px;
    margin-top: 0;
    margin-bottom: 0;
    margin-left: auto;
@@ -67,17 +67,19 @@ html, body {
    margin: 0;
    padding: 0;
    font-family: "Museo-700", "Helvetica", "Arial", sans-serif;
-   font-size: 60px;
+   font-size: 73px;
    color: #ed2024;
    text-shadow: 2px 2px 0px #000000;
    filter: dropshadow(color=#000000, offx=2, offy=2);
 }
 #header p {
    color: #fff;
-   font-size: 20px;
+   font-size: 25px;
+   line-height: 1.5;
    font-weight: 300;
    margin-left: 100px;
    margin-right: 100px;
+   padding-bottom: 3px;
 }
 #header-more {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
@@ -90,6 +92,7 @@ html, body {
    -moz-box-shadow:0 2px 5px #000;
    -webkit-box-shadow: 0 2px 5px #000;
    box-shadow: 0 2px 5px #000;
+   margin-top: 10px;
 }
 #header-more h2 {
    color: #fff;
@@ -129,7 +132,7 @@ html, body {
 
 #top-priority {
    text-align: center;
-   background-color: #f3f3f3;
+   background: url(/images/checked-background.png);
    border-top: 5px solid #ed2024;
 /*   border-bottom: 5px solid #ed2024;*/
 }
@@ -175,7 +178,10 @@ html, body {
    color: #bebebe;
 }
 #top-priority .small {
-   font-size: 14px;
+   font-size: 13px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   color: #333333;
 }
 #top-priority button {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
