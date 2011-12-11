@@ -60,6 +60,8 @@ AmericancensorshipOrg::Application.routes.draw do
       get :uncensor
     end
   end
+
+  resources :congress_emails, :only => [ :create ]
   
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
