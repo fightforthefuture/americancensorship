@@ -1,5 +1,9 @@
-Share this post with your friends:
+<div class="primary-actions" id="general">
+<div class="wrap">
+	<h2>Share this post with your friends:</h2>
 
-<p>
-  <%= @post.censored_post + " " + uncensor_post_url(@post) %>
-</p>
+	<p>
+	  <%= @post.censored_post %>  <a href="<%= uncensor_post_url(@post) %>"><%= uncensor_post_url(@post) %></a>
+	</p>
+</div>
+</div>

@@ -130,30 +130,31 @@ html, body {
    box-shadow: 0px 0px 9px #000000;
 }
 
-#top-priority {
+.primary-actions {
    text-align: center;
    background: url(/images/checked-background.png);
    border-top: 5px solid #ed2024;
 /*   border-bottom: 5px solid #ed2024;*/
    margin-top: 10px;
+   overflow: auto;
 }
-#top-priority h2 {
+.primary-actions h2 {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
    text-shadow: 1px 1px 0px #222;
    font-size: 60px;
    padding: 0;
    margin: 10px;
 }
-#top-priority p {
+.primary-actions p {
    color: #333;
    font-size: 26px;
 }
-#top-priority form {
+.primary-actions form {
    /* margin-left: 300px; */
    text-align: center;
    display: inline;
 }
-#top-priority input {
+.primary-actions input, .primary-actions textarea {
    width: 300px;
    display: block;
    margin: 10px;
@@ -163,13 +164,10 @@ html, body {
    font-size: 18px;
    background: 0;
    background: #fff;
-   border: 1px solid #555;
+   border: 1px solid #afafaf;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
-   -moz-box-shadow:inset 1px 1px 5px #b3b3b3;
-   -webkit-box-shadow:inset 1px 1px 5px #b3b3b3;
-   box-shadow:inset 1px 1px 5px #b3b3b3;
    padding: 10px;
 }
 .default-text {
@@ -178,13 +176,13 @@ html, body {
 .default-text-active {
    color: #bebebe;
 }
-#top-priority .small {
+.primary-actions .small {
    font-size: 13px;
    padding-top: 15px;
    padding-bottom: 15px;
    color: #333333;
 }
-#top-priority button {
+.primary-actions button {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
 	width:349px;
 	height:53px;
@@ -200,7 +198,27 @@ html, body {
 	margin-left: -3px;
 	margin-top: 10px;
 }
-#top-priority button span {vertical-align:top; margin-top: 9px; display: inline-block;}
+.primary-actions button:hover {
+	background: url(/images/ac2-button-hover.png) no-repeat;
+}
+.primary-actions button span {vertical-align:top; margin-top: 9px; display: inline-block;}
 .maincontentarea {
 	border-top: 10px solid #787878;
+	padding-bottom: 0;
 }
+
+#top-priority {
+	margin-bottom: 60px;
+}
+
+#censor textarea {height: 100px;}
+
+.footerarea {background: red url(/images/ac2-checked-background-alternate.png);}
+.footerarea .footer p {font-size: 24px; color: #555555; margin-bottom: 10px; padding-bottom: 0;}
+body a, body a:visited {color: #2587d9;}
+.contact {font-family: 'BebasNeueRegular';}
+.footer p.sponsored {margin-top: 40px; font-size: 29px;}
+
+#generic_content {margin-bottom: 30px; padding-top: 20px; padding-bottom: 20px; color: #666;}
+
+#general {margin-bottom: 20px; padding-bottom: 30px;}

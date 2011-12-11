@@ -1,5 +1,5 @@
 <%= form_for @post do |f| %>
-  <%= f.text_area :post %>
+  <%= f.text_area(:post, :rows => 10) %>
   <%= f.text_field :name %>
   <%= f.text_field :email %>
   <%= f.submit "I'm Censoring my posts in Protest!" %>
