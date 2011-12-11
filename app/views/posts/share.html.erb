@@ -2,8 +2,8 @@
 <div class="wrap">
 	<h2>Share this post with your friends:</h2>
 
-	<p>
-	  <%= @post.censored_post %>  <a href="<%= uncensor_post_url(@post) %>"><%= uncensor_post_url(@post) %></a>
-	</p>
+	<textarea>
+	  <%= @post.censored_post %>  <%= uncensor_post_url(@post) %>
+	</textarea>
 </div>
 </div>
