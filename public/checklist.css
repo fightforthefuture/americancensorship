@@ -205,6 +205,9 @@ html, body {
 .maincontentarea {
 	border-top: 10px solid #787878;
 	padding-bottom: 0;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 #top-priority {
@@ -228,3 +231,29 @@ textarea#share_box {
 	height: 200px;
 	margin: 0 auto;
 }
+
+h2.redheader {
+	font-size: 32px; 
+	color: red; 
+	padding: 0; 
+	width: 940px; 
+	float: right;
+	position: relative;
+
+}
+
+#nextsteps {
+	width: 100%;
+	float: left;
+}
+
+.testimonialwrap {width: 940px;}
+
+p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block; clear: both;}
+
+.each_section {margin-left: 40px; margin-right: 40px;}
+
+.each_section ul {margin-top: 10px; margin-bottom: 40px;}
+.each_section ul li {font-size: 20px;}
+
+#quotes {margin-top: 40px;}
