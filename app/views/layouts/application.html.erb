@@ -77,23 +77,23 @@
 	      </div>
 
 
-	        <div class="primary-actions" id="censor">
-		    <div class="wrap">
-				<h2>Censor your posts in protest</h2>
-		          <p>Enter your text here, and we'll give you back a censored version to post to<br /> 
-			your site, with a link to share with your users.</p>
-				<%= form_for @post do |f| %>
-			    <%= f.text_area :post, :placeholder => 'The post you want censored' %>
-			    <%= f.text_field :name, :placeholder => 'Your Name' %>
-			    <%= f.text_field :email, :placeholder => 'Your Email' %>
-			            <button type="submit" class="submit bebas"><img src="/images/ac2-checkmark.png" alt="telephone" width="37" height="53" /> <span>OKAY, I DID IT</span></button>
-			  <% end %>
+				<div class="primary-actions" id="censor">
+					<div class="wrap">
+						<h2>Censor your posts in protest</h2>
+						<p>Enter your text here, and we'll give you back a censored version to post to<br /> 
+							your site, with a link to share with your users.</p>
+							<%= form_for Post.new do |f| %>
+							<%= f.text_area :post, :placeholder => 'The post you want censored' %>
+							<%= f.text_field :name, :placeholder => 'Your Name' %>
+							<%= f.text_field :email, :placeholder => 'Your Email' %>
+							<button type="submit" class="submit bebas"><img src="/images/ac2-checkmark.png" alt="telephone" width="37" height="53" /> <span>OKAY, I DID IT</span></button>
+							<% end %>
 
-			  <p class="small">Fight for the Future may contact you about related campaigns. We will not share your email with anyone.</p>
+							<p class="small">Fight for the Future may contact you about related campaigns. We will not share your email with anyone.</p>
 
 
-	        </div>
-	      </div>
+						</div>
+					</div>
 
 
 

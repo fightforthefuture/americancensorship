@@ -25,13 +25,14 @@
 
 </div>
 
+<div style="text-align:center; margin-bottom:20px">			
+	<button onclick="window.location.hash='uncensor'">Uncensor this post!</button>
+</div>
+
 <br><br>
 
 <div class="primary-actions" id="general">
-	<div class="wrap">
-
-		<h2> This post is censored</h2>
-
+	<div class="wrap" id="uncensor">
 		
 
 		<h2>Write an email to Congress Now!</h2>
@@ -46,7 +47,7 @@
 				<%= f.text_field :email, :placeholder => :email %>
 				<%= f.text_field :address, :placeholder => :address %>
 				<%= f.text_field :zip, :placeholder => :zip %>
-
+				<input type="hidden" name="post_id" value="<%=  @post.id %>">
 			</div>
 
 
