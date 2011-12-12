@@ -7,9 +7,16 @@
 		<p>Great. Now you can post your censored message everywhere. The awesome part? Anyone who clicks the link can view your uncensored post, but only if they take an action to stop censorship (writing Congress, making a call). When they follow the link, they'll see the page below. <strong>Make sure to include the link</strong> so we're driving as many emails and calls as possible.</p>
 
 
-		<div class="share-type"><p class="share-explain">You can post censored text to Twitter&#8230;</p><input class="to-share" value="some txt" /><a href="" class="btn">Tweet</a></div>
+		<div class="share-type">
+			<p class="share-explain">You can post censored text to Twitter&#8230;</p>
+			<input class="to-share" value="<%= @post.to_tweet %>" readonly />
+			<a href="http://twitter.com/intent/tweet?text=<%=  CGI::escape(@post.to_tweet) %>" class="btn">Tweet</a>
+		</div>
 
-		<div class="share-type"><p class="share-explain">Or to Facebook&#8230;</p><input class="to-share" value="" /><a href="" class="btn">Facebook</a></div>
+		<div class="share-type"><p class="share-explain">Or to Facebook&#8230;</p>
+			<input class="to-share" value="<%= @post.to_tweet %>" readonly />
+			<a href="http://www.facebook.com/share.php?u=<%=  CGI::escape(@post.short_url) %>&t=<%= truncate(@post.censored_post, :length => 140) %>" class="btn">Facebook</a>
+		</div>
 
 		<div class="share-type"><p class="share-explain">Or post the text (followed by a link) to comments, forums, emaii lists, anywhere!</p><input class="to-share" value="<%= @post.censored_post %>" id="text-copy"/><a href="" class="btn" id="copy-text">Copy Text</a></div>
 
