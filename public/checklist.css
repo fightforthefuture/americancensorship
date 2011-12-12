@@ -269,6 +269,14 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 	text-align: center;
 }
 
+#inner_wrap {
+	overflow:hidden;
+	text-align:left;
+	width: 900px; 
+	margin:0 auto;
+	padding: 20px;
+}
+
 #explanation {
 	float:left;width:540px; margin-right: 20px;
 
@@ -291,5 +299,6 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
 	color: #555;
 	font-size: 14px;
-	text-indent: -96px;
+	overflow-y:scroll;
 }
+
