@@ -1,9 +1,27 @@
 <style>
 .not-on-internal {display: none;}
 </style>
+<script type="text/javascript" src="/jquery.zclip.min.js"></script>
+	<div class="notification">
+		
+		<p>Great. Now you can post your censored message everywhere. The awesome part? Anyone who clicks the link can view your uncensored post, but only if they take an action to stop censorship (writing Congress, making a call). When they follow the link, they'll see the page below. <strong>Make sure to include the link</strong> so we're driving as many emails and calls as possible.</p>
 
-	<p class="notification">Great. Copy the censored version below, and give people this link to uncensor it: <a href="<%= uncensor_post_url(@post) %>"><%= uncensor_post_url(@post) %></a></p>
 
+<div class="share-type"><p class="share-explain">An explanation</p><input class="to-share" value="some txt" /><a href="" class="btn">Tweet</a></div>
+
+<div class="share-type"><p class="share-explain"></p><input class="to-share" value="" /><a href="" class="btn">Facebook</a></div>
+
+<div class="share-type"><p class="share-explain"></p><input class="to-share" value="" /><a href="" class="btn">Copy Text</a></div>
+
+<div class="share-type"><p class="share-explain"></p><input class="to-share" value="" /><a href="" class="btn">Copy HTML</a></div>
+
+<div class="share-type"><p class="share-explain"></p><input class="to-share" value="" /><a href="" class="btn">Copy Link</a></div>
+
+
+		
+<a href="<%= uncensor_post_url(@post) %>"><%= uncensor_post_url(@post) %></a>
+
+</div>
 
 	<div style="overflow:hidden; text-align:left;width: 900px; margin:0 auto";>
 		
@@ -58,3 +76,16 @@
 
 </div>
 </div>
+
+<script>
+
+$(document).ready(function(){
+
+    $('a#copy-facebook').zclip({
+        path:'/ZeroClipboard.swf',
+        copy:function(){return $('input#facebook-copy').val();}
+    });
+
+});
+
+</script>
