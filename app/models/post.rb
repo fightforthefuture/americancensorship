@@ -11,7 +11,7 @@ class Post < ActiveRecord::Base
   end
   
   def to_tweet
-    truncate(censored_post, :length => 140) + ' ' + short_url
+    truncate(censored_post, :length => (140 - short_url.length - 10)) + ' ' + short_url
   end
   
   def short_url

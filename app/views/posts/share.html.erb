@@ -19,7 +19,7 @@
 		<div class="share-type">
 			<p class="share-explain">You can post censored text to Twitter&#8230;</p>
 			<input class="to-share" value="<%= @post.to_tweet %>" readonly />
-			<a href="http://twitter.com/intent/tweet?text=<%=  CGI::escape(@post.to_tweet) %>" class="btn">Tweet</a>
+			<a href="http://twitter.com/intent/tweet?text=<%= CGI::escape(@post.to_tweet) %>" class="btn">Tweet</a>
 		</div>
 
 		<div class="share-type"><p class="share-explain">Or to Facebook&#8230;</p>
