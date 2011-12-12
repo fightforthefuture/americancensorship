@@ -2,13 +2,9 @@
 .not-on-internal {display: none;}
 </style>
 
-
-
-<meta property="og:title" content="There's #censorshipeverywhere this week - tell everyone!" />
-<meta property="og:description" content="<%= @post.censored_post %>" />
-<meta property="og:image" content="http://ac-staging.facebook.com/images/ac2-facebook.jpg" />
-		
-		
+<% content_for :facebook_content do %>
+  <%= @post.censored_post -%>
+<% end %>
 		
 <script type="text/javascript" src="/jquery.zclip.min.js"></script>
 	<div class="notification">
