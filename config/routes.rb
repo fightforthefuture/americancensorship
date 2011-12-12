@@ -67,8 +67,8 @@ AmericancensorshipOrg::Application.routes.draw do
   # use Rack::Static , :urls => { "/" => "index.html", "/index.html" => "index.html",
   # "/modal" => "modal/index.html", "/js" => "modal/client.js.min", "/callwidget" => "modal/call-form.html", "/callwidget/thanks" => "modal/call-form-thanks.html", "/callwidget/next" => "modal/call-form-done.html" } , :root => "public"
 
-  match "/js",                :to => redirect("/public/modal/client.js.min")
-  match "/callwidget",        :to => redirect("/public/modal/call-form.html")
-  match "/callwidget/thanks", :to => redirect("/public/modal/call-form-thanks.html")
-  match "/callwidget/next",   :to => redirect("/public/modal/call-form-done.html")
+  match "/js",                :to => redirect("/modal/client.js.min")
+  match "/callwidget",        :to => redirect("/modal/call-form.html")
+  match "/callwidget/thanks", :to => redirect("/modal/call-form-thanks.html")
+  match "/callwidget/next",   :to => redirect("/modal/call-form-done.html")
 end
