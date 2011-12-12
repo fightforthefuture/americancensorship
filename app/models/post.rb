@@ -15,7 +15,7 @@ class Post < ActiveRecord::Base
   end
   
   def short_url
-    'http://americancensorship.org/posts/' + id.to_s
+    'http://americancensorship.org/posts/' + id.to_s + '/uncensor'
   end
   
 end
