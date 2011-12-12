@@ -1,0 +1,29 @@
+<div class="wrap" id="uncensor">
+	
+
+	<h2>Write an email to Congress Now!</h2>
+
+	<% if @post.present? %>
+
+	<p>Congress needs to hear from all of us or this bill is going to pass</p>
+	<%= form_for CongressEmail.new do |f| %>
+	<div style="width:664px;margin:0 auto;overflow:hidden">
+		<div style="float:left;width:322px; margin-right:20px">
+			<%= f.text_field :name, :placeholder => :name %>
+			<%= f.text_field :email, :placeholder => :email %>
+			<%= f.text_field :address, :placeholder => :address %>
+			<%= f.text_field :zip, :placeholder => :zip %>
+			<input type="hidden" name="post_id" value="<%=  @post.id %>">
+		</div>
+
+
+		<div style="float:left;width:322px">
+			<%= f.text_area :letter, :style => "height: 182px", :value => 'letter to congress here' %>
+		</div>
+
+		<%= button_tag "Send Letter to uncensor" %>
+	</div>
+	<% end %>
+
+	<% end %>
+</div>
