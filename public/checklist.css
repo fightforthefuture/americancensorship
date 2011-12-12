@@ -266,7 +266,8 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 	clear: both;
 	margin-bottom: 20px; 
 	text-align: center;
-	overflow: auto;
+	overflow: hidden;
+	padding-bottom: 20px;
 }
 
 #inner_wrap {
@@ -322,6 +323,6 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 	text-align: center;
 }
 
-.share-type {display: block; width: 100%; text-align: left;}
-.share-type input {border: 1px solid #666; padding: 7px; margin-right: 20px; width: 700px; }
-.share-type p {margin-top: 20px;}
+.share-type {display: block; width: 100%; text-align: left; margin-left: 20px;}
+.share-type input {border: 1px solid #666; padding: 7px; margin-right: 10px; width: 690px; }
+.share-type p {margin-top: 20px; font-size: 14px; margin-bottom: 5px;}
