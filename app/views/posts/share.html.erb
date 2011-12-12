@@ -1,9 +1,60 @@
 <div class="primary-actions" id="general">
 <div class="wrap">
-	<h2>Share this post with your friends:</h2>
+	<p class="notification">Great. Copy the censored version below, and give people this link to uncensor it: <a href="<%= uncensor_post_url(@post) %>"><%= uncensor_post_url(@post) %></a></p>
 
-	<textarea id="share_box">
-	  <%= @post.censored_post %>  <%= uncensor_post_url(@post) %>
-	</textarea>
+	<h2> This post is censored</h2>
+
+	<div style="overflow:hidden; text-align:left;width: 900px; margin:0 auto";>
+		
+		<div id="explanation" style="">
+		
+			<p>I'm censoring my posts in <strong>protest</strong> of two bills that would censor the web. SOPA and the PROTECT IP act would
+				give governments and corporations the power to take down entire websites over infringing posts by users, endangering the internet
+				as we know it.
+			</p>
+
+			<p>To uncensor this post and ensure that internet censorship never becomes law in America contact Congress now. After you do, 
+				you’ll see my uncensored post on the next page. Thanks for doing this.
+			</p>
+
+			<p style="text-align:right; margin-right: 60px">&mdash; <%= @post.name %></p>
+
+		</div>
+		
+		<div id="post" style="">
+			<%= @post.censored_post %>
+		</div>
+
+	</div>
+
+	<br><br>
+
+	<h2>Write an email to Congress Now!</h2>
+
+	<% if @post.present? %>
+
+	<p>Congress needs to hear from all of us or this bill is going to pass</p>
+	<form accept-charset="UTF-8" action="/congress_emails" class="new_congress_email" id="new_congress_email" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="WpoVtixAI9WirJs1PM9iw7rSr5WoomLxbgEqZXGGfv0=" /></div>
+			<div style="width:664px;margin:0 auto;overflow:hidden">
+				<div style="float:left;width:322px; margin-right:20px">
+					<input id="congress_email_name" name="congress_email[name]" placeholder="name" size="30" type="text" />
+					<input id="congress_email_email" name="congress_email[email]" placeholder="email" size="30" type="text" />
+					<input id="congress_email_address" name="congress_email[address]" placeholder="address" size="30" type="text" />
+					<input id="congress_email_zip" name="congress_email[zip]" placeholder="zip" size="30" type="text" />
+
+				</div>
+
+
+				<div style="float:left;width:322px">
+					<textarea cols="40" id="congress_email_letter" name="congress_email[letter]" rows="20" style="height: 182px">letter to congress here</textarea>
+				</div>
+
+				<button name="button" type="submit">Send Letter to uncensor</button>
+			</div>
+
+	<% end %>
+
+
+
 </div>
 </div>

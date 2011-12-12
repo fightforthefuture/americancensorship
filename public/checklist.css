@@ -255,3 +255,31 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 .each_section ul li {font-size: 20px;}
 
 #quotes {margin-top: 40px;}
+
+.notification {
+	margin: 10px; padding: 10px; background: yellow; border: 1px solid #eee;
+}
+
+#explanation {
+	float:left;width:540px; margin-right: 20px;
+
+}
+
+#explanation p {
+	font-size:20px;
+	line-height: 150%;
+	color: #555;
+}
+
+#post {
+	float: left;
+	padding: 10px;
+	width:318px;
+	height: 280px;
+	overflow: hidden;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+	color: #555;
+}
