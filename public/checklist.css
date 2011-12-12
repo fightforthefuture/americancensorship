@@ -179,7 +179,7 @@ html, body {
    font-size: 13px;
    color: #333333;
 }
-.primary-actions button {
+button {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
 	width:349px;
 	height:53px;
