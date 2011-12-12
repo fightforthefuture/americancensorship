@@ -178,8 +178,6 @@ html, body {
 }
 .primary-actions .small {
    font-size: 13px;
-   padding-top: 15px;
-   padding-bottom: 15px;
    color: #333333;
 }
 .primary-actions button {
@@ -196,7 +194,6 @@ html, body {
 	cursor:pointer;
 	background: url(/images/ac2-button.png) no-repeat;
 	margin-left: -3px;
-	margin-top: 10px;
 }
 .primary-actions button:hover {
 	background: url(/images/ac2-button-hover.png) no-repeat;
@@ -211,8 +208,10 @@ html, body {
 }
 
 #top-priority {
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
+
+.primary-actions p {margin-top: 10px; margin-bottom: 30px; display: block;}
 
 #censor textarea {height: 100px;}
 
