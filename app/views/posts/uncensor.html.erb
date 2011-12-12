@@ -1,8 +1,50 @@
+<style>
+
+#explanation {
+	float:left;
+	width:540px; 
+	margin-right: 20px;
+}
+
+#explanation p {
+	font-size:20px;
+	line-height: 150%;
+	color: #555;
+}
+
+#post {
+	float: left;
+	padding: 10px;
+	width:318px;
+	height: 280px;
+	overflow: hidden;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+	color: #555;
+}
+
+</style>
 <div class="primary-actions" id="general">
-<div class="wrap">
-	<h2>Here's your uncensored post!</h2>
-	<p>
-	  <%= @post.post %>
-	</p>
-</div>
+	<div class="wrap">
+
+		<h2>Here’s the post</h2>
+		<div style="overflow:hidden; text-align:left;width: 900px; margin:0 auto; padding: 20px";>
+
+			<div id="explanation">
+
+				<p>Thanks for writing Congress. Here’s the post.</p>
+				<p>Now, can you tell 20 friends to write Congress too? These bills could pass in a matter of days.</p>
+				<p>Thanks,<br>
+					<%= @post.name %>
+				</p>
+				
+			</div>
+			<div id="post">
+				<%= @post.post %>
+			</div>			
+			
+		</div>
+	</div>
 </div>

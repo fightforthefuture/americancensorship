@@ -1,9 +1,85 @@
-<div class="primary-actions" id="general">
-<div class="wrap">
-	<h2>Write Congress! And we'll decode your form!</h2>
+<style>
 
-	<% if @post.present? %>
-	  <%= link_to uncensor_post_path(@post) %>
-	<% end %>
-</div>
+#explanation {
+	float:left;width:540px; margin-right: 20px;
+
+}
+
+#explanation p {
+	font-size:20px;
+	line-height: 150%;
+	color: #555;
+}
+
+#post {
+	float: left;
+	padding: 10px;
+	width:318px;
+	height: 280px;
+	overflow: hidden;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+	color: #555;
+}
+
+</style>
+
+<div class="primary-actions" id="general">
+	<div class="wrap">
+
+		<h2> This post is censored</h2>
+
+		<div style="overflow:hidden; text-align:left;width: 900px; margin:0 auto";>
+			
+			<div id="explanation" style="">
+			
+				<p>I'm censoring my posts in <strong>protest</strong> of two bills that would censor the web. SOPA and the PROTECT IP act would
+					give governments and corporations the power to take down entire websites over infringing posts by users, endangering the internet
+					as we know it.
+				</p>
+
+				<p>To uncensor this post and ensure that internet censorship never becomes law in America contact Congress now. After you do, 
+					you’ll see my uncensored post on the next page. Thanks for doing this.
+				</p>
+
+				<p style="text-align:right; margin-right: 60px">&mdash; <%= @post.name %></p>
+
+			</div>
+			
+			<div id="post" style="">
+				<%= @post.censored_post %>
+			</div>
+
+		</div>
+  	
+		<br><br>
+
+		<h2>Write an email to Congress Now!</h2>
+
+		<% if @post.present? %>
+
+		<p>Congress needs to hear from all of us or this bill is going to pass</p>
+		<%= form_for @congress_email do |f| %>
+		<div style="width:664px;margin:0 auto;overflow:hidden">
+			<div style="float:left;width:322px; margin-right:20px">
+				<%= f.text_field :name, :placeholder => :name %>
+				<%= f.text_field :email, :placeholder => :email %>
+				<%= f.text_field :address, :placeholder => :address %>
+				<%= f.text_field :zip, :placeholder => :zip %>
+
+			</div>
+
+
+			<div style="float:left;width:322px">
+				<%= f.text_area :letter, :style => "height: 182px", :value => 'letter to congress here' %>
+			</div>
+
+			<%= button_tag "Send Letter to uncensor" %>
+		</div>
+		<% end %>
+
+		<% end %>
+	</div>
 </div>
