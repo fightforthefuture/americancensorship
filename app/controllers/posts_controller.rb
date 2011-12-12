@@ -22,7 +22,6 @@ class PostsController < ApplicationController
   def show
     begin
       @post = Post.find(params[:id])
-      @congress_email = CongressEmail.new
     rescue ActiveRecord::RecordNotFound => e
       Rails.logger.warn("Didn't find a post with that ID!")
       Rails.logger.info(e.inspect)
@@ -32,6 +31,7 @@ class PostsController < ApplicationController
   def uncensor
     begin
       @post = Post.find(params[:id])
+      @congress_email = CongressEmail.new
     rescue ActiveRecord::RecordNotFound => e
       Rails.logger.warn("Didn't find a post with that ID!")
       Rails.logger.info(e.inspect)
