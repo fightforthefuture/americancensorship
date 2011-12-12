@@ -1,8 +1,10 @@
+<style>
+.not-on-internal {display: none;}
+</style>
 <div class="primary-actions" id="general">
 <div class="wrap">
 	<p class="notification">Great. Copy the censored version below, and give people this link to uncensor it: <a href="<%= uncensor_post_url(@post) %>"><%= uncensor_post_url(@post) %></a></p>
 
-	<h2> This post is censored</h2>
 
 	<div style="overflow:hidden; text-align:left;width: 900px; margin:0 auto";>
 		
@@ -14,10 +16,10 @@
 			</p>
 
 			<p>To uncensor this post and ensure that internet censorship never becomes law in America contact Congress now. After you do, 
-				you’ll see my uncensored post on the next page. Thanks for doing this.
+				you’ll see my uncensored post on the next page. 
 			</p>
 
-			<p style="text-align:right; margin-right: 60px">&mdash; <%= @post.name %></p>
+			<p>Thanks for doing this &mdash; <%= @post.name %></p>
 
 		</div>
 		
