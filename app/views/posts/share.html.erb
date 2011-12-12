@@ -1,8 +1,7 @@
 <style>
 .not-on-internal {display: none;}
 </style>
-<div class="primary-actions" id="general">
-<div class="wrap">
+
 	<p class="notification">Great. Copy the censored version below, and give people this link to uncensor it: <a href="<%= uncensor_post_url(@post) %>"><%= uncensor_post_url(@post) %></a></p>
 
 
@@ -30,7 +29,8 @@
 	</div>
 
 	<br><br>
-
+	<div class="primary-actions" id="general">
+	<div class="wrap">
 	<h2>Write an email to Congress Now!</h2>
 
 	<% if @post.present? %>

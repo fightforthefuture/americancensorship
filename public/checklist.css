@@ -257,7 +257,16 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 #quotes {margin-top: 40px;}
 
 .notification {
-	margin: 10px; padding: 10px; background: yellow; border: 1px solid #eee;
+	margin: 10px; 
+	padding: 10px; 
+	background: yellow; 
+	border: 1px solid #eee; 
+	font-size: 20px; 
+	margin: 0 auto; 
+	width: 850px; 
+	clear: both;
+	margin-bottom: 20px; 
+	text-align: center;
 }
 
 #explanation {
@@ -268,7 +277,7 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 #explanation p {
 	font-size:20px;
 	line-height: 150%;
-	color: #555;
+	color: #fff;
 }
 
 #post {
@@ -276,7 +285,6 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 	padding: 10px;
 	width:318px;
 	height: 280px;
-	overflow: hidden;
 	background: white;
 	border: 1px solid #ccc;
 	border-radius: 6px;
