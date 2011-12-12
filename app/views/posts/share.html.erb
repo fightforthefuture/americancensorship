@@ -1,6 +1,15 @@
 <style>
 .not-on-internal {display: none;}
 </style>
+
+
+
+<meta property="og:title" content="There's #censorshipeverywhere this week - tell everyone!" />
+<meta property="og:description" content="<%= @post.censored_post %>" />
+<meta property="og:image" content="http://ac-staging.facebook.com/images/ac2-facebook.jpg" />
+		
+		
+		
 <script type="text/javascript" src="/jquery.zclip.min.js"></script>
 	<div class="notification">
 		
@@ -15,7 +24,7 @@
 
 		<div class="share-type"><p class="share-explain">Or to Facebook&#8230;</p>
 			<input class="to-share" value="<%= @post.to_tweet %>" readonly />
-			<a href="http://www.facebook.com/share.php?u=<%=  CGI::escape(@post.short_url) %>&t=<%= truncate(@post.censored_post, :length => 140) %>" class="btn">Facebook</a>
+			<a href="http://www.facebook.com/share.php?u=<%=  CGI::escape(uncensor_post_url(@post)) %>" class="btn">Facebook</a>
 		</div>
 
 		<div class="share-type"><p class="share-explain">Or post the text (followed by a link) to comments, forums, emaii lists, anywhere!</p><input class="to-share" value="<%= @post.censored_post %>" id="text-copy"/><a href="" class="btn" id="copy-text">Copy Text</a></div>

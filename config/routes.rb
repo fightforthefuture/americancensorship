@@ -1,12 +1,3 @@
-# TODO translate old routes
-# use Rack::Static , :urls => { "/" => "index.html", "/index.html" => "index.html", "/modal" => "modal/index.html", "/js" => "modal/client.js.min", "/callwidget" => "modal/call-form.html", "/callwidget/thanks" => "modal/call-form-thanks.html", "/callwidget/next" => "modal/call-form-done.html" } , :root => "public"
-
-# run Rack::URLMap.new({
-#   "/"      => Rack::Directory.new("public"),
-#   "/modal" => Rack::Directory.new("public/modal"),
-#   "/modal/state-dept-petition" => Rack::Directory.new("public/modal/state-dept-petition")
-# })
-
 AmericancensorshipOrg::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -72,4 +63,12 @@ AmericancensorshipOrg::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+  # TODO translate old routes
+  # use Rack::Static , :urls => { "/" => "index.html", "/index.html" => "index.html",
+  # "/modal" => "modal/index.html", "/js" => "modal/client.js.min", "/callwidget" => "modal/call-form.html", "/callwidget/thanks" => "modal/call-form-thanks.html", "/callwidget/next" => "modal/call-form-done.html" } , :root => "public"
+
+  match "/js",                :to => redirect("/public/modal/client.js.min")
+  match "/callwidget",        :to => redirect("/public/modal/call-form.html")
+  match "/callwidget/thanks", :to => redirect("/public/modal/call-form-thanks.html")
+  match "/callwidget/next",   :to => redirect("/public/modal/call-form-done.html")
 end
