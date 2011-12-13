@@ -84,6 +84,16 @@
 	  window.onload = (typeof window.onload != 'function') ?
 	     loadChartbeat : function() { oldonload(); loadChartbeat(); };
 	})();
+	
+	// Setup tracking for form submisison on call form
+    var trackingFn = function() {
+      window.optimizely = window.optimizely || [];
+      window.optimizely.push(["trackEvent", "SubmittedCallForm"]);
+    }
+
+    $('#callin').submit(function() {
+      trackingFn();
+    });
 	</script>
 </body>
 </html>
