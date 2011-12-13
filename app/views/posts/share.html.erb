@@ -23,8 +23,7 @@
 
 		<div class="share-type"><p class="share-explain">Or post HTML to your blog or homepage (includes a big "uncensor this" button)</p><input class="to-share" value="<%= @post.censored_post %> <a href='<%= uncensor_post_url(@post) %>' style='border: none; display: block; margin: 10px;'><img src='http://americancensorship.org/images/ac2-uncensorthis.png' alt='Uncensor This' width='349' height='53' /></a>" id="html-copy"/><a href="" class="btn" id="copy-html">Copy HTML</a></div>
 
-		<div class="share-type"><p class="share-explain">Make sure to include the link back to this page&#8230;</p><input class="to-share" value="<a href='<%= uncensor_post_url(@post) %>'><%= uncensor_post_url(@post) %></a>
-		" id="link-copy" /><a href="" class="btn" id="copy-link">Copy Link</a></div>
+		<div class="share-type"><p class="share-explain">Make sure to include the link back to this page&#8230;</p><input class="to-share" value="<%= uncensor_post_url(@post) -%>" id="link-copy" /><a href="" class="btn" id="copy-link">Copy Link</a></div>
   <br>
   <p class="center">
     What they'll see after clicking the link:
