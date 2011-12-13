@@ -75,7 +75,7 @@
 	        <div id="header">
 		    <div class="wrap">
 	          <h1>Stop American Censorship</h1>
-	          <p class="not-on-internal" style="font-size: 20px;">This Thursday, a bill that would create America’s first Internet censorship system is going to a full committee for a vote, and is likely to pass. We can kill this bill now. This week, millions of us will protest censorship, censoring our own posts and asking you to call Congress. We need your help - please make a call right now.</p>
+	          <p class="not-on-internal" style="font-size: 20px;">This Thursday, a bill that would create America’s first Internet censorship system is going to a full committee for a vote, and is likely to pass. This week, millions of us will protest censorship, censoring our own posts and asking you to call Congress. We need your help - please make a call right now.</p>
 	        </div>
 		</div><!-- kill #header -->
 	
@@ -129,6 +129,19 @@
 							<%= f.text_field :email, :placeholder => 'Your Email' %>
 							<button type="submit" class="submit bebas"><img src="/images/ac2-checkmark.png" alt="telephone" width="37" height="53" /> <span>OKAY, I DID IT</span></button>
 							<% end %>
+							
+							<div class="censor-explain">
+								<img src="/images/ac2-censorize-tweets.jpg" alt="Censorize Tweets" />
+								<img src="/images/ac2-censorize-email.jpg" alt="Censorize Email" />
+								
+								<img src="/images/ac2-censorize-facebook.jpg" alt="Censorize Facebook" />
+								<img src="/images/ac2-censorize-site.jpg" alt="Censorize Site" />
+							</div>
+							
+							
+							
+							
+							
 							<div class="screenies">
 								<img src="/images/csrd-twitter.png" alt="Censored Twitter" />
 								<img src="/images/csrd-blog.png" alt="Censored Blog" />
@@ -420,6 +433,17 @@
 			  window.onload = (typeof window.onload != 'function') ?
 			     loadChartbeat : function() { oldonload(); loadChartbeat(); };
 			})();
+			
+			
+				// Setup tracking for form submisison on #censor
+			    var trackingFn = function() {
+			      window.optimizely = window.optimizely || [];
+			      window.optimizely.push(["trackEvent", "SubmittedCensorForm"]);
+			    }
+
+			    $('#new_post').submit(function() {
+			      trackingFn();
+			    });
 			</script>
 	</body>
 </html>
