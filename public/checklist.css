@@ -321,10 +321,11 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
     padding:5px 10px 6px 7px; /* Links */
 	width: 80px;
 	text-align: center;
+	margin-top: -4px;
 }
 
 .share-type {display: block; width: 100%; text-align: left; margin-left: 20px;}
-.share-type input {border: 1px solid #666; padding: 7px; margin-right: 10px; width: 690px; }
+.share-type input, .share-type textarea {border: 1px solid #666; padding: 7px; margin-right: 10px; width: 680px; height: 13px; font-size: 12px; float: left;}
 .share-type p {margin-top: 20px; font-size: 14px; margin-bottom: 5px;}
 
 #shareitup {
