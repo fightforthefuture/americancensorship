@@ -744,11 +744,13 @@ border-bottom: 1px solid #26384D;
      margin: 0 auto;
      /* padding-left: 50px; */
   }
-  .thecodez-heavy p {
+  #thecodez-heavy p {
+     font-family: "BebasNeueRegular";
+     font-size: 24px;
      letter-spacing: 1.8px;
      text-align: left;
   }
-  .thecodez-heavy p.explanation {
+  #thecodez-heavy p.explanation {
      font-size: 14px;
      letter-spacing: 1px;
      margin-bottom: 0px;
@@ -770,7 +772,7 @@ border-bottom: 1px solid #26384D;
     cursor: pointer;
     font-size: 13px;
   }
-  .thecodez textarea {
+  #thecodez-heavy textarea {
     font-size: 60%;
     text-align: left;
     color: #666;
