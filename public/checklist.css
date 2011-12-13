@@ -178,7 +178,7 @@ html, body {
    font-size: 13px;
    color: #333333;
 }
-button {
+#top-priority a.btn, button {
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
 	width:349px;
 	height:53px;
@@ -280,13 +280,13 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 
 #explanation {
 	float:left;width:540px; margin-right: 20px;
-
 }
 
 #explanation p {
 	font-size:20px;
 	line-height: 150%;
 	color: #fff;
+	margin-bottom: 10px;
 }
 
 #post {
@@ -337,3 +337,7 @@ p.point {font-size: 27px; margin-top: 30px; margin-bottom: 10px; display: block;
 }
 
 #shareitup .twitter-share-button {margin-top: 20px;}
+
+#top-priority a.btn {color: #fff; text-decoration: none; display: block; font-size: 22px; text-align: center; padding-top: 12px; margin: 0 auto; cursor: pointer;}
+.screenies {text-align: center; overflow: auto; display: block; width: 100%; margin-top: 20px; margin-bottom: 10px;}
+.screenies img {margin-right: 10px; border: 1px solid #666;}
