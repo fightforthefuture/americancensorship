@@ -13,6 +13,9 @@ class PostsController < ApplicationController
   def share
     begin
       @post = Post.find(params[:id])
+      @og_title = ''
+      @og_url = uncensor_post_url(@post)
+      @og_description = @post.censored_post
     rescue ActiveRecord::RecordNotFound => e
       Rails.logger.warn("Didn't find a post with that ID!")
       Rails.logger.info(e.inspect)
