@@ -49,7 +49,11 @@
 
 	</div>
 	
-	<textarea id="post" style=""><%= @post.censored_post %> <%= uncensor_post_url(@post) %></textarea>
+<textarea id="post" style="">
+I've censored the following, in protest of a bill that gives any corporation and the US government the power to censor the internet--a bill that could pass THIS WEEK. To see the uncensored text, and to stop internet censorship, visit:
+<%= uncensor_post_url(@post) %>
+
+<%= @post.censored_post %></textarea>
 
 </div>
 
