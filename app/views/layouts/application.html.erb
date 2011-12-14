@@ -119,9 +119,9 @@
 						<h2 style="font-size: 37px; margin-top: -20px; ">USE OUR #CENSORSHIPEVERYWHERE TOOL TO CENSOR YOUR POSTS</h2>
 						<p style="font-size: 16px; width: 700px; margin: 0 auto;">Enter your text here, and we'll give you back a censored version to post to twitter, facebook, or your blog or website. You’ll also get a link that your readers or friends will have to click on in order to read the redacted text -- they’ll have to email or call Congress to reveal what was censored. </p>
 							<%= form_for Post.new do |f| %>
-							<%= f.text_area :post, :placeholder => 'The post you want censored' %>
-							<%= f.text_field :name, :placeholder => 'Your Name' %>
-							<%= f.text_field :email, :placeholder => 'Your Email' %>
+							<textarea cols="40" id="post_post" name="post[post]" class="default-text" title="The post you want censored" rows="20"></textarea>
+							<input id="post_name" name="post[name]" class="default-text" title="Your Name" size="30" type="text" />
+							<input id="post_email" name="post[email]" class="default-text" title="Your Email" size="30" type="text" />
 							<button type="submit" class="submit bebas"><img src="/images/ac2-checkmark.png" alt="telephone" width="37" height="53" /> <span>OKAY, I DID IT</span></button>
 							<% end %>
 							
