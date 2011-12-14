@@ -42,7 +42,7 @@ a:hover{
 
 
 .wrap{
-	width:588px;
+	width:560px;
 	margin:0 auto;
 	padding:0 0 0 0;
 	overflow:hidden;
@@ -69,7 +69,8 @@ a:hover{
 }
 .maincontent{
 	width:512px;
-	padding: 10px 38px 0px 38px;
+	padding: 10px 0px 0px 0px;
+  margin: 0 auto;
 	overflow:hidden;
 }
 .topinfo{
