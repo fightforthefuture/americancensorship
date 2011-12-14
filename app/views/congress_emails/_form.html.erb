@@ -9,10 +9,10 @@
 	<%= form_for CongressEmail.new do |f| %>
 	<div style="width:664px;margin:0 auto;overflow:hidden">
 		<div style="float:left;width:322px; margin-right:20px">
-			<%= f.text_field :name, :placeholder => :name %>
-			<%= f.text_field :email, :placeholder => :email %>
-			<%= f.text_field :address, :placeholder => :address %>
-			<%= f.text_field :zip, :placeholder => :zip %>
+			<input id="congress_email_name" name="congress_email[name]" class="default-text" title="Name" size="30" type="text" />
+			<input id="congress_email_email" name="congress_email[email]" class="default-text" title="Email" size="30" type="text" />
+			<input id="congress_email_address" name="congress_email[address]" class="default-text" title="Address" size="30" type="text" />
+			<input id="congress_email_zip" name="congress_email[zip]" class="default-text" title="Zip" size="30" type="text" />
 			<input type="hidden" name="post_id" value="<%=  @post.id %>">
 		</div>
 
