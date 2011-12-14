@@ -8,8 +8,8 @@
 		<p>Great. Now you can post your censored message everywhere. The awesome part? Anyone who clicks the link can view your uncensored post, but only if they take an action to stop censorship (writing Congress, making a call). When they follow the link, they'll see the page below. <strong>Make sure to include the link</strong> so we're driving as many emails and calls as possible.</p>
 
 		<div style="margin-top: 20px;">
-			<a href="http://twitter.com/intent/tweet?text=<%= CGI::escape(@post.to_tweet) %>"><img src="http://freebieber.org/img/buttons/wide_tw.png" alt="Share on Twitter"></a>
-			<a href="http://www.facebook.com/share.php?u=<%=  CGI::escape(uncensor_post_url(@post)) %>"><img src="http://freebieber.org/img/buttons/wide_fb.png" alt="Share on Facebook"></a>
+			<a href="http://twitter.com/intent/tweet?text=<%= CGI::escape(@post.to_tweet) %>"><img src="http://freebieber.org/img/buttons/wide_tw.png" alt="Share on Twitter" onClick="_gaq.push(['_trackEvent', 'Censored Posts', 'Shared', 'Twitter']);"></a>
+			<a href="http://www.facebook.com/share.php?u=<%=  CGI::escape(uncensor_post_url(@post)) %>"><img src="http://freebieber.org/img/buttons/wide_fb.png" alt="Share on Facebook" onClick="_gaq.push(['_trackEvent', 'Censored Posts', 'Shared', 'Facebook']);"></a>
 		</div>
 		<div class="share-type"><p class="share-explain">Or post the text (followed by a link) to comments, forums, email lists, anywhere!</p>
 <textarea class="to-share" id="text-copy">
