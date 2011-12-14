@@ -50,11 +50,11 @@ a:hover{
 .header{
 	margin: 0 auto;
 	width: 100%;
-	height:78px;
+	height: 78px;
 	background:url(call-images/headerbg.png) repeat-x;
 	text-align:center;
 	overflow:hidden;
-	padding:25px 0 0 0;
+	padding: 10px 0 0 0;
 	color:#fefefe;
 }
 .header h1{
@@ -69,15 +69,14 @@ a:hover{
 }
 .maincontent{
 	width:512px;
-	padding:20px 38px 0px 38px;
+	padding: 10px 38px 0px 38px;
 	overflow:hidden;
 }
 .topinfo{
 	width:512px;
-	padding: 0 0 10px 0;
+	padding: 0 0 5px 0;
 	overflow: auto;
 	text-align:center;
-	background:url(call-images/bdr.png) repeat-x bottom left;
 }
 .topinfo h1{
 	font-size:44px;
@@ -125,14 +124,13 @@ a:hover{
 }
 .bottomform{
 	width:512px;
-	padding: 10px 0 0 0;
+	padding: 0 0 0 0;
 	overflow:hidden;
-	background:url(call-images/bdr.png) repeat-x top left;
 }
 .bottomform p{
 	text-align:center;
 	/* padding:0 0 15px 0; */
-  padding: 5px;
+  padding: 0;
 	line-height:24px;
 }
 .formlist{
