@@ -74,7 +74,7 @@ a:hover{
 }
 .topinfo{
 	width:512px;
-	padding:0 0 20px 0;
+	padding: 0 0 10px 0;
 	overflow: auto;
 	text-align:center;
 	background:url(call-images/bdr.png) repeat-x bottom left;
@@ -125,7 +125,7 @@ a:hover{
 }
 .bottomform{
 	width:512px;
-	padding: 20px 0 0 0;
+	padding: 10px 0 0 0;
 	overflow:hidden;
 	background:url(call-images/bdr.png) repeat-x top left;
 }
@@ -281,6 +281,7 @@ p.learn {text-align: center; font-size: 13px; float: left; letter-spacing: 1px;}
 }
 .header h1.bebas {
    letter-spacing: 1.5px;
+   line-height: 1.5em;
 }	
 
 /* Disclaimer Text */
