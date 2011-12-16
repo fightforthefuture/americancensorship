@@ -4,7 +4,7 @@
       // Detect non-US users and ask them to petition the state department instead.
       $.get('http://api.hostip.info/country.php', function(response) {
         if(response !== 'US') {
-          $("#top-action").attr("src", "/modal/state-dept-petition/index.html");
+          $("#call-widget-frame").attr("src", "/modal/state-dept-petition/index.html");
         }
       });
     });
@@ -12,4 +12,5 @@
 <% end %>
 
 <a name="call"></a>
-<iframe id="top-action" src="/ac2/frames/call-form.html" style="width: 100%; height: 636px; border: none; display: block; position: relative;" scrolling="no" ></iframe>
+<iframe src="/ac2/frames/call-form.html" id="call-widget-frame" style="width: 100%; height: 636px; border: none; display: block; position: relative;" scrolling="no" ></iframe>
+>>>>>>> 9451dbb2d566df16b8136c95258a70457c2670e7
