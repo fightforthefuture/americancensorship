@@ -1,0 +1,78 @@
+<html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+
+    <link href="/checklist.css" rel="stylesheet" type="text/css">
+
+    <link href="/thanks-iframe.css" rel="stylesheet" type="text/css">
+    <script>
+      $(document).ready(function() {
+        $(".default-text").focus(function(){
+          if ($(this).val() == $(this)[0].title){
+            $(this).removeClass("default-text-active");
+            $(this).val("");
+          }
+        });
+
+        $(".default-text").blur(function(){
+          if ($(this).val() == ""){
+            $(this).addClass("default-text-active");
+            $(this).val($(this)[0].title);
+          }
+        });
+
+        $(".default-text").blur();
+      });
+    </script>
+</head>
+<body>
+	<script type="text/javascript">
+
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-26978317-1']);
+	      _gaq.push(['_trackPageview']);
+
+	      (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();
+
+	    </script>
+	<div id="top-priority" class="primary-actions thanks">
+		<div class="wrap" >
+			
+			<div style="text-align: center; margin: 0 auto;">
+			<h2>Thanks!</h2>
+				<p>We'll email you about calling your representatives regarding SOPA.</p>			
+
+			<p style="width: 650px; font-weight: bold; text-align: center;">Now that you've signed up can you get 5 friends to do the same?</p>
+			<div style="margin-top: 20px; text-align: center;">
+				<a href="http://twitter.com/intent/tweet?text=OMG+need+%23CensorshipEverywhere+this+week%21+Censor+your+posts+with+a+tool%2C+call%2C+spread+http%3A%2F%2Famericancensorship.org"><img src="http://freebieber.org/img/buttons/wide_tw.png" alt="Share on Twitter" onClick="_gaq.push(['_trackEvent', 'Censored Posts', 'Shared', 'Twitter']);"></a>
+				<a href="http://www.facebook.com/share.php?u=http://americancensorship.org"><img src="http://freebieber.org/img/buttons/wide_fb.png" alt="Share on Facebook" onClick="_gaq.push(['_trackEvent', 'Censored Posts', 'Shared', 'Facebook']);"></a>
+		</div>
+			
+		</div><!-- kill .wrap -->
+	</div><!-- kill .primary-actions -->
+	
+	<script type="text/javascript">
+	var _sf_async_config={uid:30346,domain:"americancensorship.org"};
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement('script');
+	    e.setAttribute('language', 'javascript');
+	    e.setAttribute('type', 'text/javascript');
+	    e.setAttribute('src',
+	       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+	       "js/chartbeat.js");
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != 'function') ?
+	     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+	</script>
+</body>
+</html>
