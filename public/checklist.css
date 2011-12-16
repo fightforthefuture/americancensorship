@@ -1,4 +1,4 @@
-@font-face {font-family: 'Museo-700';src: url('fonts/197E39_0_0.eot');src: url('fonts/197E39_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/197E39_0_0.woff') format('woff'),url('fonts/197E39_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-700';src: url('fonts/197E39_0_0.eot');src: url('/fonts/197E39_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/197E39_0_0.woff') format('woff'),url('/fonts/197E39_0_0.ttf') format('truetype');}
 @font-face {
     font-family: 'BebasNeueRegular';
     src: url('/fonts/BebasNeue-webfont.eot');
