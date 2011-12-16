@@ -483,6 +483,11 @@ h1#logo a {
 	margin: 0 auto;
 }
 
+h1#not-logo a {
+	color: red;
+	text-decoration: none;
+}
+
 p.not-on-internal {
 font-size: 12px;
 }
