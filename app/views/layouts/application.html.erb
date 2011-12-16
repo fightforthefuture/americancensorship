@@ -49,6 +49,9 @@
 	
 		</script>
 		<meta name="viewport" content = "width=1000" />
+    <% if content_for?(:head) %>
+      <%= yield(:head) -%>
+    <% end %>
   </head>
 	<body>
 		<div id="fb-root"></div>
