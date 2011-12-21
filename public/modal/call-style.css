@@ -322,6 +322,10 @@ p.learn {text-align: center; font-size: 13px; float: left; letter-spacing: 1px;}
 	
 }
 
+.wrap.horizontal .left_form {
+	height: 40px;
+}
+
 .horizontal .topinfo p {
 	font-size: 15px;
 	font-weight: bold;
@@ -338,4 +342,5 @@ p.learn {text-align: center; font-size: 13px; float: left; letter-spacing: 1px;}
 	font-size: 15px;
 	padding: 5px 0 5px 5px;
 	border: 1px solid #333;
+	
 }

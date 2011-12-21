@@ -13,14 +13,17 @@
 	<script>
 	//pSUPERFLY.virtualPage("/callwdiget", "Form: Call In");
 	$(document).ready(function() {
+		
 		$('#callin input').focus(function () {
 			$(this).addClass('focus');
-			$('#callin input:not(.focus)').animate({width: '75px'}, 500);
+			$('#callin input:not(.focus)').animate({width: '75px'}, 250);
 	    $(this).animate({ width: "205px" }, 500);
 		});
+		
 		$('#callin input').blur(function () {
+			
+			$('#callin input:not(.focus)').animate({width: '107px'}, 250);
 			$(this).removeClass('focus');
-			$('#callin input:not(.focus)').animate({width: '107px'}, 500);
 		});
 	});
 	</script>
@@ -60,16 +63,16 @@
               <p>Once you submit this form, we'll call you with talking points about the bill.  Then we'll connect you to your Representative.</p>
         <div class="formlist">
           <form action="http://centerforrights.mcommons.com/profiles/join" method="POST" id="callin">
-              <div class="left_form">
+          <div class="left_form">
 
           <input type="hidden" name="opt_in_path[]" value="90341" />
           <input type="hidden" name="redirect_to" value="http://americancensorship.org/callwidget/thanks" />
           <input type="hidden" name="mconnect" value="14241" />
-          <input type="text" name="person[phone]" onfocus="if(this.value=='Phone Number')this.value=''"onblur="if(this.value=='')this.value='Phone Number'" value="Phone Number" style="margin-left: 7px;"/>
-          <input type="text" name="person[street1]" onfocus="if(this.value=='Your Street Address')this.value=''"onblur="if(this.value=='')this.value='Your Street Address'" value="Your Address"/>
-          <input type="text" name="person[postal_code]" onfocus="if(this.value=='Zip Code')this.value=''"onblur="if(this.value=='')this.value='Zip Code'" value="Zip Code"/>
+          <input type="text" name="person[phone]" onfocus="if(this.value=='Phone Number')this.value=''"onblur="if(this.value=='')this.value='Phone Number'" value="Phone Number" style="margin-left: 7px;" placeholder="Phone Number"/>
+          <input type="text" name="person[street1]" onfocus="if(this.value=='Address')this.value=''"onblur="if(this.value=='')this.value='Address'" value="Address" placeholder="Address"/>
+          <input type="text" name="person[postal_code]" onfocus="if(this.value=='Zip Code')this.value=''"onblur="if(this.value=='')this.value='Zip Code'" value="Zip Code" placeholder="Zip Code"/>
 
-          <input type="text" name="person[email]" onfocus="if(this.value=='Email')this.value=''"onblur="if(this.value=='')this.value='Email'" value="Email"/>
+          <input type="text" name="person[email]" onfocus="if(this.value=='Email')this.value=''"onblur="if(this.value=='')this.value='Email'" value="Email" placeholder="Email"/>
 
         </div>
 
