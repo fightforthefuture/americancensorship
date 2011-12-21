@@ -315,3 +315,27 @@ p.learn {text-align: center; font-size: 13px; float: left; letter-spacing: 1px;}
    float: right;
    margin-right: 50px;
 }
+
+/* Horizontal Modal */
+
+.wrap.horizontal, .wrap.horizontal .maincontent, .wrap.horizontal .topinfo, .wrap.horizontal .counterarea, .wrap.horizontal .formlist,.wrap.horizontal .bottomform {
+	
+}
+
+.horizontal .topinfo p {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.horizontal .bottomform p {
+	font-size: 13px;
+}
+
+.horizontal .formlist input {
+	width: 107px;
+	margin-right: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px 0 5px 5px;
+	border: 1px solid #333;
+}
