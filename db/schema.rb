@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,22 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111211185053) do
+ActiveRecord::Schema.define(:version => 20111221211556) do
 
   create_table "congress_emails", :force => true do |t|
-    t.string "name"
-    t.string "email"
-    t.string "address"
-    t.string "zip"
-    t.text   "letter"
+    t.string   "name"
+    t.string   "email"
+    t.string   "address"
+    t.string   "zip"
+    t.text     "letter"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "posts", :force => true do |t|
-    t.text     "post"
-    t.string   "email"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.text      "post"
+    t.string    "email"
+    t.string    "name"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
 end
