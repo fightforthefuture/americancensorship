@@ -1,15 +1,2 @@
-<%= content_for(:head) do %>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      // Detect non-US users and ask them to petition the state department instead.
-      $.get('http://api.hostip.info/country.php', function(response) {
-        if(response !== 'US') {
-          $("#call-widget-frame").attr("src", "/modal/state-dept-petition/index.html");
-        }
-      });
-    });
-  </script>
-<% end %>
-
 <a name="call"></a>
-<iframe src="/act-now-ac" id="call-widget-frame" style="width: 100%; height: 466px; border: none; display: block; position: relative;" scrolling="no" ></iframe>
+<iframe src="/meet-your-senators/index.html" id="call-widget-frame" style="width: 100%; height: 466px; border: none; display: block; position: relative;" scrolling="no" ></iframe>
