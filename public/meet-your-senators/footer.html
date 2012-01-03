@@ -1,0 +1,53 @@
+		<div class="wrap" style="width: 100%;">
+			<h2 style="width: 800px; margin: 0 auto; margin-top: 20px;">Go To a Town Hall</h2>
+			<p>The Senate is scheduled to vote on the internet censorship bill on <strong>Tuesday, January 24th</strong>, and unless we can find 41 senators to block the vote, it is going to pass. Will you meet with your senators during the January recess and ask them to vote it down?</p>
+
+			<form action="https://donate.fightforthefuture.org/page/signup/meet-your-senators" method="POST" id="callin">
+				<input type="hidden" name="redirect_to" value="http://americancensorship.org/meet-your-senators/thanks.html" />
+				<input type="email" name="email"  title="Email"  class="default-text" />
+				<input type="text" name="zip" title="Zip Code" class="default-text"  />
+        <br/>
+				<button type="submit" class="submit bebas"><img src="/images/ac2-telephone.png" alt="telephone" width="37" height="53" /> <span>Yes, I'll do it.</span></button>
+			</form>
+
+      <a class="embed" href="#" title="Embed this widget on your site!">
+        Embed this widget on your site!
+      </a>
+			<p class="small">Fight for the Future may contact you about related campaigns.<br /> We will not share your email with anyone. <a href="http://fightforthefuture.org/privacy" title="Privacy Policy.">Privacy Policy</a>.
+      </p>
+
+			
+		</div><!-- kill .wrap -->
+	</div><!-- kill .primary-actions -->
+	
+	<script type="text/javascript">
+	var _sf_async_config={uid:30346,domain:"americancensorship.org"};
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement('script');
+	    e.setAttribute('language', 'javascript');
+	    e.setAttribute('type', 'text/javascript');
+	    e.setAttribute('src',
+	       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+	       "js/chartbeat.js");
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != 'function') ?
+	     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+	
+	// Setup tracking for form submisison on call form
+    var trackingFn = function() {
+      window.optimizely = window.optimizely || [];
+      window.optimizely.push(["trackEvent", "SubmittedCallForm"]);
+    }
+
+    $('#callin').submit(function() {
+      trackingFn();
+    });
+	</script>
+  <script type="text/javascript" src="/geo.js"></script>
+</body>
+</html>
