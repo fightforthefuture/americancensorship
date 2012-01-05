@@ -31,4 +31,9 @@ AmericancensorshipOrg::Application.routes.draw do
   match "/act-now-ac-thanks",  :to => redirect("/ac2/frames/call-form-thanks.html")
   match "/act-now-ac-thanks/", :to => redirect("/ac2/frames/call-form-thanks.html")
   match "/call-client",		   :to => redirect("/modal/call-client.js")
+
+  match "/meet-your-senators", :to => redirect("/meet")
+  match "/meet-your-senators/", :to => redirect("/meet")
+  match "/meet-your-senators/index.html", :to => redirect("/meet")
+  match "/meet-your-senators/thanks.html", :to => redirect("/meet/thanks.html")
 end
