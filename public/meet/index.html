@@ -6,6 +6,61 @@
     <link href="/checklist.css" rel="stylesheet" type="text/css">    
     <link href="/style.css" rel="stylesheet" type="text/css" />
     <script>
+        var states = {
+          "AL": "107",
+          "AK": "106",
+          "AZ": "105",
+          "VA": "60",
+          "AR": "104",
+          "CA": "103",
+          "CO": "102",
+          "CT": "101",
+          "DE": "100",
+          "FL": "99",
+          "GA": "98",
+          "HI": "97",
+          "ID": "96",
+          "IL": "95",
+          "IN": "94",
+          "IO": "93",
+          "WV": "92",
+          "KS": "91",
+          "KY": "90",
+          "LA": "89",
+          "ME": "88",
+          "MD": "87",
+          "MA": "86",
+          "MI": "85",
+          "MN": "84",
+          "MS": "83",
+          "MO": "82",
+          "MT": "81",
+          "NE": "80",
+          "NV": "79",
+          "NH": "78",
+          "NJ": "77",
+          "NM": "76",
+          "NY": "75",
+          "NC": "74",
+          "ND": "73",
+          "OH": "72",
+          "OK": "71",
+          "OR": "70",
+          "PA": "69",
+          "RI": "68",
+          "SC": "67",
+          "SD": "66",
+          "TN": "65",
+          "TX": "64",
+          "UT": "63",
+          "VT": "62",
+          "WY": "56",
+          "WA": "59",
+          "WI": "57"
+        }
+
+
+
       function getUrlVars()
       {
           var vars = [], hash;
@@ -23,8 +78,14 @@
         /* See if there's a state in the url and autofill if so. */
         if (getUrlVars()["state"]) {
           var state = getUrlVars()["state"].toUpperCase();
-          var option = $("option[value='" + state + "']")[0];
-          if (option) { option.selected = true; }
+          //var option = $("option[value='" + state + "']")[0];
+          //if (option) { option.selected = true; }
+          var href = "http://my.americancensorship.org"
+          if (state in states) {
+            href = href + "/discussion/" + states[state];
+          }
+          window.top.document.location.href = href;
+          
         }
 
         /* Detect form submit. Validate and store state selection. */
