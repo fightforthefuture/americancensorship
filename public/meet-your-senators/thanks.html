@@ -63,13 +63,14 @@
         }
 
         /* Fetch the state and redirect if it is set. */
+        console.log("phong: " + $.cookie("fftf-town-hall-state"));
         if ($.cookie("fftf-town-hall-state") != null) {
           var state = $.cookie("fftf-town-hall-state");
           var href = "http://my.americancensorship.org"
           if (state in states) {
             href = href + "/discussions/" + states[state];
           }
-          window.top.document.document.location.href = href;
+          window.top.document.location.href = href;
         }
 
         $(".default-text").focus(function(){
