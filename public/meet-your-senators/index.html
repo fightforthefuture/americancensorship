@@ -6,7 +6,27 @@
     <link href="/checklist.css" rel="stylesheet" type="text/css">    
     <link href="/style.css" rel="stylesheet" type="text/css" />
     <script>
+      function getUrlVars()
+      {
+          var vars = [], hash;
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          for(var i = 0; i < hashes.length; i++)
+          {
+              hash = hashes[i].split('=');
+              vars.push(hash[0]);
+              vars[hash[0]] = hash[1];
+          }
+          return vars;
+      }
+
       $(document).ready(function() {
+        /* See if there's a state in the url and autofill if so. */
+        if (getUrlVars()["state"]) {
+          var state = getUrlVars()["state"].toUpperCase();
+          var option = $("option[value='" + state + "']")[0];
+          if (option) { option.selected = true; }
+        }
+
         /* Detect form submit. Validate and store state selection. */
         $("#callin").submit(function() {
           var state = $("#state")[0].value;
