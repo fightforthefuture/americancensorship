@@ -10,7 +10,6 @@
         /* Detect form submit. Validate and store state selection. */
         $("#callin").submit(function() {
           var state = $("#state")[0].value;
-          console.log("state: " + state);
           if (state !== "") {
             $.cookie("fftf-town-hall-state", state);
           }
