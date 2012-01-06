@@ -161,6 +161,16 @@ form#callin input {display: inline; width: 150px; text-align: center;}
     </div>
 		<div class="wrap" style="width: 100%;">
 			<h2 style="width: 800px; margin: 0 auto; margin-top: 20px;">Go To a Town Hall</h2>
+
+            <div class="extra"></div>
+            <script>
+
+            if (top === self) { 
+            console.log("not in a frame");
+            $('.extra').prepend('<p><strong>Stop American Censorship:</strong> Congress is about to pass internet censorship, even though the vast majority of Americans are opposed. We need to kill the bill to protect our rights to free speech, privacy, and prosperity.</p>');
+            } else {
+                console.log("in a frame");}
+            </script>
 			<p>The Senate is scheduled to vote on the internet censorship bill on <strong>Tuesday, January 24th</strong>, and unless we can find 41 senators to block the vote, it is going to pass. Will you meet with your senators during the January recess and ask them to vote it down?</p>
 
 			<form action="https://donate.fightforthefuture.org/page/signup/meet-your-senators" method="POST" id="callin">
