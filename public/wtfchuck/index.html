@@ -3,19 +3,35 @@
   <head>
     <script src="//cdn.optimizely.com/js/14211444.js"></script>
 
-    <title>WTF Chuck!</title>
+    <title>WTF, Chuck!</title>
 
     <link href="/checklist.css" rel="stylesheet" type="text/css">    
     <link href="/style.css" rel="stylesheet" type="text/css">
     <style type="text/css">
+      body {
+         color: #fff;
+         font-family: "Helvetica Neue", "Arial", sans-serif;
+         font-size: 20px;
+      }
+      h1 {
+         font-size: 28px;
+      }
+      img, p {
+         margin-top: 20px;
+      }
       .wrap {
          width: 100%;
       }
       #container {
-         width: 500px;
+         margin-top: 20px;
+         width: 800px;
+         text-align: center;
       }
       .primary-actions p {
          width: auto;
+      }
+      a {
+         text-decoration: none;
       }
     </style>
 
@@ -43,21 +59,23 @@
 
     <div class="wrap">
       <div id="container">
-        <div id="top-priority" class="primary-actions">
-          <h2>WTF Chuck</h2>
-          <img src="headshot.jpg" alt="WTF Chuck!">
-          <p>Selling out New York to some companies from LA.</p>
+      <h1>WTF, Chuck!</h1>
+      <img src="headshot.jpg" alt="WTF Chuck!">
+          <p>Selling out New York to some companies from LA?</p>
           <p>NY Sen. Schumer is a member of the Democratic leadership and a co-sponsor of the web censorship bill, S.968. So far, he won't meet with us to hear our concerns. We need to flood his office with meeting requests.</p>
 
           <p>
             <h3>Speak your mind!</h3>
-            <a href="mailto:scheduling_schumer@schumer.senate.gov">Email Chuck.</a>
+            <a href="mailto:scheduling_schumer@schumer.senate.gov" class="submit bebas">
+              <button class="submit bebas">
+                <span style="padding-bottom: 10px;">Email Chuck</span>
+              </button>
+            </a>
             <br/>
             <span>
               Call him at 212-486-4430 to follow up.
             </span>
           </p>
-        </div>
       </div>
     </div>
   </body>
