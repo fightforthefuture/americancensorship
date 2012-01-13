@@ -2,9 +2,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     
-    <style type="text/css">{CustomCSS}</style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
  <script src="http://americancensorship.org/sopacountdownimg/jquery-countdown/js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+<script>
+// Add placeholder text to bad browsers
+
+$('[placeholder]').focus(function() {
+  var input = $(this);
+  if (input.val() == input.attr('placeholder')) {
+    input.val('');
+    input.removeClass('placeholder');
+  }
+}).blur(function() {
+  var input = $(this);
+  if (input.val() == '' || input.val() == input.attr('placeholder')) {
+    input.addClass('placeholder');
+    input.val(input.attr('placeholder'));
+  }
+}).blur().parents('form').submit(function() {
+  $(this).find('[placeholder]').each(function() {
+    var input = $(this);
+    if (input.val() == input.attr('placeholder')) {
+      input.val('');
+    }
+  })
+});
+</script>
+
  <script type="text/javascript">
 
 // function to get a time difference
@@ -263,7 +287,7 @@ ul.explain li.hours {margin-right: 0;}
 			<h2 class="caps">Don't let internet censorship pass!</h2>
 			<form action="https://donate.fightforthefuture.org/page/signup/meet-your-senators" method="POST" id="callin">
 							<input type="hidden" name="redirect_to" value="http://americancensorship.org/meet-your-senators/thanks.html" />
-							<input type="email" name="email"  title="Email"  class="default-text" required><br />
+							<input type="email" name="email"  title="Email"  class="default-text" required placeholder="Email"><br />
 			        <select id="state" name="state" required>
 			          <option value="" selected>Choose Your State</option>
 			          <option value="AL">Alabama</option>

@@ -1,5 +1,5 @@
 AmericancensorshipOrg::Application.routes.draw do
-  resources :posts, :only => [ :show, :create ] do
+  resources :posts, :only, :index => [ :show, :create, :index ] do
     member do
       get :share
       get :uncensor

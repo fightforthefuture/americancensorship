@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
 
+  def index
+    @posts = Post.all
+  end
+
   def create
     @post = Post.new(params[:post])
     if @post.save
@@ -9,6 +13,9 @@ class PostsController < ApplicationController
       Rails.logger.info(@post.inspect)
     end
   end
+  
+
+
 
   def share
     begin
