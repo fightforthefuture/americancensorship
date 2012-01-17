@@ -94,6 +94,7 @@ html, body {
    margin-top: 10px;
 }
 #header-more h2 {
+   font-weight: normal;
    color: #fff;
    font-weight: 200;
    letter-spacing: 1.25px;
@@ -138,6 +139,7 @@ html, body {
    overflow: auto;
 }
 .primary-actions h2 {
+   font-weight: normal;
    font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
    text-shadow: 1px 1px 0px #222;
    font-size: 60px;
@@ -365,6 +367,7 @@ a.embed {float: right; width: 120px; margin-right: 20px;}
 
 }
 .take-action h1 {
+font-weight: normal;
 font-family: "BebasNeueRegular", "Helvetica", "Arial", sans-serif;
 font-size: 58px;
 margin-bottom: -10;
@@ -485,6 +488,7 @@ h1#logo a {
 }
 
 h1#not-logo a {
+	font-weight: normal;
 	color: red;
 	text-decoration: none;
 }
@@ -492,3 +496,7 @@ h1#not-logo a {
 p.not-on-internal {
 font-size: 12px;
 }
+
+.contact p {text-align: center;}
+
+.footerarea p {text-align: center;}
