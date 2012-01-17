@@ -218,7 +218,7 @@ html, body {
 	z-index: 1000;
 }
 
-.primary-actions p {margin-top: 10px; margin-bottom: 30px; display: block;}
+.primary-actions p {margin-top: 10px; margin-bottom: 10px; display: block;}
 
 #censor textarea {height: 100px;}
 
