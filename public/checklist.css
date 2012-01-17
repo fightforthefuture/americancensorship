@@ -497,6 +497,10 @@ p.not-on-internal {
 font-size: 12px;
 }
 
+p.not-on-internal a {
+   color: #f7f7f7;
+}
+
 .contact p {text-align: center;}
 
 .footerarea p {text-align: center;}
