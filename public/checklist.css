@@ -62,15 +62,6 @@ html, body {
    padding-top: 10px;
    padding-bottom: 10px;
 }
-#header h1 {
-   margin: 0;
-   padding: 0;
-   font-family: "Museo-700", "Helvetica", "Arial", sans-serif;
-   font-size: 73px;
-   color: #ed2024;
-   text-shadow: 2px 2px 0px #000000;
-   filter: dropshadow(color=#000000, offx=2, offy=2);
-}
 #header p {
    color: #fff;
    font-size: 25px;
@@ -478,20 +469,15 @@ margin-bottom: 3px;
 
 .thankss .wrap {margin: 0 auto; width: 900px; overflow: auto;}
 
-h1#logo a {
-	display: block;
-	text-indent: -9999px;
-	background: url(/images/h1_logo.png) no-repeat;
-	width: 553px;
-	height: 181px;
-	margin: 0 auto;
-}
+
 
 h1#not-logo a {
-	font-weight: normal;
-	color: red;
-	text-decoration: none;
-}
+	background: url(/images/ac3-h1.png) no-repeat;
+	width: 1100px;
+	height: 127px;
+	text-indent: -9999px;
+	display: block;
+	}
 
 p.not-on-internal {
 font-size: 12px;
@@ -504,3 +490,20 @@ p.not-on-internal a {
 .contact p {text-align: center;}
 
 .footerarea p {text-align: center;}
+
+
+button.ac3 {
+	background: url(/images/ac3-button-left.png) no-repeat;
+	height: 36px;
+	width: auto;
+
+	display: inline-block;
+}
+
+button.ac3 span {
+	margin-top: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: url(/images/ac3-button-right.png) no-repeat right;
+	
+	}
