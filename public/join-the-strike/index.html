@@ -147,6 +147,47 @@
     </script>
 
 <style>
+
+button#gotime {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:24px;
+	font-weight:bold;
+	padding:7px 5px 7px 5px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #333;
+	display: block;
+	clear: both;
+	margin: 0 auto 10px auto;
+	width: 360px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+form button#gotime:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}
+
+button#gotime:active {
+	position:relative;
+	top:1px;
+}
+
+button#gotime span {margin-top: 2px;}
 #top-priority form button.submit, #top-priority a.btn {background: url(/images/ac2-button-green.png) no-repeat;}
 #top-priority a.btn {background: None; text-indent: 0; font-family: 'helvetica neue', helvetica, verdana; color: #000; font-size: 22px; text-decoration: underline; color: #2587D9; font-weight: bold; text-shadow: none;}
 
@@ -156,8 +197,8 @@ form#callin input {display: inline; width: 150px; text-align: center;}
 
 	<div id="top-priority" class="primary-actions">
 		<div class="wrap" style="width: 100%;">
-			<h2 style="width: 800px; margin: 0 auto; margin-top: 20px;">SOPA Strike!</h2>
-      <p>Thank you for being a part of the largest online protest in US history. Senators need to hear from you NOW.</p>
+			<h2 style="width: 800px; margin: 0 auto; margin-top: 20px;">Write Congress Now!</h2>
+      <p>The Senate will vote on PIPA this Monday. Senators need to hear from you <strong>right now</strong>.</p>
       
       <style type="text/css">
         .letter {
@@ -197,13 +238,12 @@ form#callin input {display: inline; width: 150px; text-align: center;}
 
 Over coming days you'll be hearing from the many businesses, advocacy organizations, and ordinary Americans who oppose this legislation because of the myriad ways in which it will stifle free speech and innovation.  We hope you'll take our concerns to heart and oppose this legislation by voting "no" on cloture.</textarea>
           </div>
-				<button><span>Send Now</span></button>
+				<button id="gotime"><span>Write Congress</span></button>
 			</form>
     </div>
 
-    <p><a href="http://sopastrike.com" title="SOPA Strike">Here's how your website can join the strike.</a></p>
-    <p><a href="http://my.americancensorship.org/" title="Meet your senators!" target="_parent">People are organizing on the ground. Join others and drop-in on your senator.</a></p>
-	  <p class="small">Fight for the Future may contact you about related campaigns.</p>
+
+	  <p class="small">Fight for the Future may contact you about related campaigns. <a href="http://fightforthefuture.org">Privacy Policy</a>.</p>
 	</div>
 		</div><!-- kill .wrap -->
 	</div><!-- kill .primary-actions -->
