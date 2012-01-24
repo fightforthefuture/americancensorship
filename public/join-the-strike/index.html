@@ -146,9 +146,7 @@
 
         $(".default-text").blur();
       });
-    </script>
 
-	<script type="text/javascript">
 	//IPInfoDB jQuery JSON query example
 	//Tested with FF 3.5, Opera 10, Chome 5 and IE 8
 	//Geolocation data is stored as serialized JSON in a cookie
@@ -245,6 +243,11 @@
 	    return '';
 	  }
 	}
+	
+	function wrong_country() {
+		$("#send-a-letter").toggle();
+		$("#petition-state-department").toggle();
+	}
 	</script>
 <style>
 
@@ -324,6 +327,16 @@ form#callin input {display: inline; width: 150px; text-align: center;}
           width: 330px;
           height: 200px;
         }
+
+		.wrong {
+			margin-top: -55px;
+			position: absolute;
+			text-decoration: 
+			underline; 
+			color: #2587D9; 
+			display: none; 
+			cursor: pointer;
+		}
       </style>
       <div class="letter">
         <div class="middle">
@@ -341,18 +354,20 @@ Over coming days you'll be hearing from the many businesses, advocacy organizati
           </div>
 				<button id="gotime"><span>Write Congress</span></button>
 			</form>
+			<div class="wrong">Not in the US?</div>
     </div>
 </div>
 	
 		
 	</div>
-	<div id="petition-state-department" style="display: none;">
+	<div id="petition-state-department" style="width: 1000px; margin: 0 auto; display: none;">
 			<h2>Not in the us? Petition the state department</h2>
 			<p>The US state department constantly speaks out against internet censorship in other countries. Pressure them to speak out against America’s new domestic censorship system.</p>
 			<form method="post" action="https://donate.fightforthefuture.org/page/signup/state-dept-petition">
 			<input class="default-text" type="email" name="email" title="Email" required="required">
 			<button type="submit" class="submit bebas">Sign the Petition</button>
 			</form>
+						<div class="wrong">In the US?</div>
 
 			
 		</div>
@@ -375,10 +390,13 @@ Over coming days you'll be hearing from the many businesses, advocacy organizati
 		// alert('Visitor country code : ' + visitorGeolocation.getField('countryCode'));
 		// $('#country').text(visitorGeolocation.getField('countryCode'));
 		if (visitorGeolocation.getField('countryCode') != 'US') {
-			$("#send-a-letter").hide();
-			$("#petition-state-department").show();	
+			wrong_country();
+			$('.wrong').show();
 		} 
 };
 	visitorGeolocation.checkcookie(callback);
-
+	$('.wrong').show();
+	$('.wrong').click(function() {
+	  wrong_country();
+	});
 	</script>
