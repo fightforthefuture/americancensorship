@@ -157,21 +157,23 @@
 											<div class="middle">
 												<p>Congress needs to get a letter from all of us or this bill is going to pass</p>
 												
-												<form name="signup" action="https://donate.fightforthefuture.org/page/signup/ac2-email-congress" method="post" id="signup">
+												<form name="signup" action="http://a.fightforthefuture.org/act/" method="post" id="signup">
 <div class="lefty">
 <input type="email" class="text default-text" size="48" id="email" name="email" title="Email" />
 
-<input size="16" id="firstname" class="default-text" name="firstname" type="text" title="Name" />
-<input size="48" id="addr1" class="default-text" name="addr1" type="text" title="Address" />
+<input size="16" id="firstname" class="default-text" name="name" type="text" title="Name" />
+<input size="48" id="addr1" class="default-text" name="address1" type="text" title="Address" />
 <input size="8" id="zip" name="zip" class="default-text" type="text" title="Zip Code" />
 												</div>
 												<div class="righty">
-													<textarea rows="5" cols="60" id="custom-182" name="custom-182">
+													<textarea rows="5" cols="60" id="custom-182" name="user_congress_letter">
 												I am your constituent, and I urge you to oppose the Stop Online Piracy Act and the PROTECT IP Act.  These bills will kill jobs and stifle innovation, undermine cyber security, risk censoring the American Internet, and provide cover for totalitarian regimes that want to undermine Internet freedom abroad.
 													</textarea>
 												</div>
 												<button type="submit">Send Letter</button>
+												<input type="hidden" name="page" value="AC2_Email_Congress">
 
+												<input type="hidden" name="lists" value="1" />
 											</form>
 
 												<p class="small">Fight for the Future may contact you about related campaigns.<br />We will not share your email with anyone. <a href="http://fightforthefuture.org/privacy" title="Privacy Policy.">Privacy Policy</a></p>
@@ -249,13 +251,15 @@
 														<textarea><a style="width:400px;height:100px;vertical-align:middle;text-align:center;background-color:#000;position:absolute;z-index:5555;top:50px;left:50px;background-image:url(http://americancensorship.org/images/stop-censorship-small.png);background-position:center center;background-repeat:no-repeat;" href="http://americancensorship.org"></a></textarea>
 														<p>Tell us you did</p>
 
+													
 
-
-					<form name="signup" action="https://donate.fightforthefuture.org/page/signup/ac2-logo-censors" method="post" id="signup">
-					<input size="6" id="custom-167" maxlength="255" name="custom-167" type="text" class="default-text text" title="Your Website"/>
+					<form name="signup" action="http://a.fightforthefuture.org/act/" method="post" id="signup">
+					<input size="6" id="custom-167" maxlength="255" name="user_website" type="text" class="default-text text" title="Your Website"/>
 					<input type="email" size="48" id="email" name="email" class="default-text text" title="Your Email"/>
 					<button type="submit" class="submit bebas"><img src="/images/ac2-button-checkmark.png" /> OKAY, I did it.</button>
-					<input name="redirect_url" type="hidden" value="" />
+						<input type="hidden" name="page" value="AC2_Logo_Censors_url">
+
+						<input type="hidden" name="lists" value="1" />
 					</form>
 											</div>
 											<div class="bottom"></div>												
