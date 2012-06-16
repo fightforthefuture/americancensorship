@@ -82,13 +82,19 @@
           <p>Pressure them to speak out about America's new domestic censorship system.</p>
         </div>
         <div class="bottomform">
-          <form method="post" action="http://a.fightforthefuture.org/act/">
+          <form method="post" action="http://nt.salsalabs.com/save">
+					<input class="default-text" type="email" name="Email" title="Email" required="required">
+					<input type="hidden" name="organization_KEY" value="501"/>
+					<input type="hidden" name="redirect" value="http://sopastrike.com/strike/thanks/"> 
+					<input type="hidden" name="object" value="supporter"/>
+					<input type="hidden" name="link" value="groups"/>
+					<input type="hidden" name="linkKey" value="10"/>
+					<input type="hidden" name="ip" id="signup_ip" />
+					<input type="hidden" name="user_agent" id="user_agent" />
+					<input type="hidden" name="receive_email" value="3">
             <div class="formlist">
-              <input class="default-text" type="email" name="email" title="Email" required="required">
+              <input class="default-text" type="email" name="Email" title="Email" required="required">
             </div>			
-			<input type="hidden" name="page" value="AC__State_Dept_Petition">
-
-			<input type="hidden" name="lists" value="1" />
             <div class="formlistsubmit">
               <button type="submit" class="submit bebas">Sign the Petition</button>
             </div>
@@ -117,6 +123,18 @@
         $('.thecodez').fadeOut();
       })
     </script>
+
+		<script type="application/javascript">
+		    function getip(json){
+					$('#signup_ip').val(json.ip);
+		    }
+
+		$("#user_agent").val(navigator.userAgent);
+		</script>
+
+		<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>
+		
+		
     <script type="text/javascript">
       var _sf_async_config={uid:30346,domain:"americancensorship.org"};
       (function(){

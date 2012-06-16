@@ -343,14 +343,20 @@ form#callin input {display: inline; width: 150px; text-align: center;}
       </style>
       <div class="letter">
         <div class="middle">
-        <form action="http://a.fightforthefuture.org/act/" method="post">
+        <form action="http://nt.salsalabs.com/save" method="post">
           <div class="lefty">
-		  		  <input type="text" name="name" placeholder="Your Name" title="Your Name" required id="firstname" class="default-text">
-			      <input type="text" name="email" placeholder="Your Email" title="Your Email" required id="email" class="default-text">
-            <input type="text" name="address1" placeholder="Your Address" title="Your Address" required class="default-text">
-            <input type="text" name="zip" placeholder="Your Zip" title="Your Zip" required class="default-text">
+		  		  <input type="text" name="First_Name" placeholder="Your Name" title="Your Name" required id="firstname" class="default-text">
+			      <input type="text" name="Email" placeholder="Your Email" title="Your Email" required id="email" class="default-text">
+            <input type="text" name="Street_Address" placeholder="Your Address" title="Your Address" required class="default-text">
+            <input type="text" name="Zip" placeholder="Your Zip" title="Your Zip" required class="default-text">
           </div>
-         
+         	<input type="hidden" name="organization_KEY" value="501"/>
+					<input type="hidden" name="redirect" value="http://sopastrike.com/strike/thanks/"> 
+					<input type="hidden" name="object" value="supporter"/>
+
+					<input type="hidden" name="ip" id="signup_ip" />
+					<input type="hidden" name="user_agent" id="user_agent" />
+					<input type="hidden" name="receive_email" value="3">
 				<button id="gotime" type="submit"><span>PLEDGE TO ACT</span></button>
 				<input type="hidden" name="page" value="SOPA_Strike_Modal_Letter_To_Congress">
 
@@ -365,11 +371,16 @@ form#callin input {display: inline; width: 150px; text-align: center;}
 	<div id="petition-state-department" style="width: 1000px; margin: 0 auto; display: none;">
 			<h2>Not in the us? Petition the state department</h2>
 			<p>The US state department constantly speaks out against internet censorship in other countries. Pressure them to speak out against America’s new domestic censorship system.</p>
-			<form method="post" action="http://a.fightforthefuture.org/act/">
-			<input class="default-text" type="email" name="email" title="Email" required="required">
-			<input type="hidden" name="page" value="AC__State_Dept_Petition">
-
-			<input type="hidden" name="lists" value="1" />
+			<form method="post" action="http://nt.salsalabs.com/save">
+			<input class="default-text" type="email" name="Email" title="Email" required="required">
+			<input type="hidden" name="organization_KEY" value="501"/>
+			<input type="hidden" name="redirect" value="http://sopastrike.com/strike/thanks/"> 
+			<input type="hidden" name="object" value="supporter"/>
+			<input type="hidden" name="link" value="groups"/>
+			<input type="hidden" name="linkKey" value="10"/>
+			<input type="hidden" name="ip" id="signup_ip" />
+			<input type="hidden" name="user_agent" id="user_agent" />
+			<input type="hidden" name="receive_email" value="3">
 			<button type="submit" class="submit bebas">Sign the Petition</button>
 			</form>
 						<!-- <div class="wrong">In the US?</div> -->
@@ -405,3 +416,13 @@ form#callin input {display: inline; width: 150px; text-align: center;}
 	  wrong_country();
 	});
 	</script>
+	
+		<script type="application/javascript">
+		    function getip(json){
+	//	      alert(json.ip); // alerts the ip address
+					$('#signup_ip').val(json.ip);
+		    }
+
+		$("#user_agent").val(navigator.userAgent);
+		</script>
+		<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>

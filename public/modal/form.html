@@ -52,23 +52,26 @@
 		<div id="secondary-form-container">
 			
 			
-			<form action="http://a.fightforthefuture.org/act/" method="post" name="participate" id="participate">
+			<form action="http://nt.salsalabs.com/save" method="post" name="participate" id="participate">
 			<input id="js" name="js" type="hidden" value="false" />
 			
 			
 			<div class="form-left">
 
-			  <input type="email" class="text" size="48" id="email" name="email" type="text"onfocus="if(this.value=='Your Email')this.value=''"onblur="if(this.value=='')this.value='Your Email'" value="Your Email"/><br />
+			  <input type="email" class="text" size="48" id="email" name="Email" type="text"onfocus="if(this.value=='Your Email')this.value=''"onblur="if(this.value=='')this.value='Your Email'" value="Your Email"/><br />
 
-			  <input size="16" id="firstname" name="name" type="text" type="text"onfocus="if(this.value=='Your Name')this.value=''"onblur="if(this.value=='')this.value='Your Name'" value="Your Name"/><br />
+			  <input size="16" id="firstname" name="First_Name" type="text" type="text"onfocus="if(this.value=='Your Name')this.value=''"onblur="if(this.value=='')this.value='Your Name'" value="Your Name"/><br />
 			  
-			  <input class="default-text" id="address1" name="addr1" type="text" title="Address" type="text"onfocus="if(this.value=='Your Address')this.value=''"onblur="if(this.value=='')this.value='Your Address'" value="Your Address"/><br />
+			  <input class="default-text" id="address1" name="Street" type="text" title="Address" type="text"onfocus="if(this.value=='Your Address')this.value=''"onblur="if(this.value=='')this.value='Your Address'" value="Your Address"/><br />
 
-              <input class="default-text" id="zip" name="zip" type="text" title="Zip" type="text"onfocus="if(this.value=='Your Zip')this.value=''"onblur="if(this.value=='')this.value='Your Zip'" value="Your Zip"/><br />
+              <input class="default-text" id="zip" name="Zip" type="text" title="Zip" type="text"onfocus="if(this.value=='Your Zip')this.value=''"onblur="if(this.value=='')this.value='Your Zip'" value="Your Zip"/><br />
 
-			<input type="hidden" name="page" value="American_Censorship_Day_Red_Modal">
-
-			<input type="hidden" name="lists" value="1" />
+							<input type="hidden" name="organization_KEY" value="501"/>
+							<input type="hidden" name="redirect" value="http://fightforthefuture.org/thanks"> 
+							<input type="hidden" name="object" value="supporter"/>
+							<input type="hidden" name="ip" id="signup_ip" />
+							<input type="hidden" name="user_agent" id="user_agent" />
+							<input type="hidden" name="receive_email" value="3">
 
             </div>
             <div class="form-right">
@@ -128,7 +131,15 @@ The Internet Blacklist bill will open the sites I love to crushing lawsuits, and
       })();
 
     </script>
+		<script type="application/javascript">
+		    function getip(json){
+					$('#signup_ip').val(json.ip);
+		    }
 
+		$("#user_agent").val(navigator.userAgent);
+		</script>
+
+		<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>
 
   </body>
 </html>

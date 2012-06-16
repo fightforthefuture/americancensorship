@@ -93,22 +93,24 @@
           <p>Congress needs to hear from you, or this bill will pass!</p>
         </div>
         <div class="bottomform">
-          <form method="post" action="http://a.fightforthefuture.org/act/">
+          <form method="post" action="http://nt.salsalabs.com/save">
             <div class="formlist">
-              <input class="default-text" type="text" name="name" title="Name" required="required">
-              <input class="default-text" type="email" name="email" title="Email" required="required">
-              <input class="default-text" type="text" name="address1" title="Address" required="required">
-              <input class="default-text" type="text" name="zip" title="Zip" required="required">
+								<input type="hidden" name="organization_KEY" value="501"/>
+								<input type="hidden" name="redirect" value="http://fightforthefuture.org/thanks"> 
+								<input type="hidden" name="object" value="supporter"/>
+								<input type="hidden" name="ip" id="signup_ip" />
+								<input type="hidden" name="user_agent" id="user_agent" />
+								<input type="hidden" name="receive_email" value="3">
+              <input class="default-text" type="text" name="First_Name" title="Name" required="required">
+              <input class="default-text" type="email" name="Email" title="Email" required="required">
+              <input class="default-text" type="text" name="Street" title="Address" required="required">
+              <input class="default-text" type="text" name="Zip" title="Zip" required="required">
               <textarea name="user_congress_letter">I am a constituent and I urge you to reject the Internet Blacklist Bills (PROTECT IP Act in the Senate and the Stop Online Piracy Act in the House).  
 
 I do *not* want the government to have the power to block websites. 
 
 The Internet Blacklist bill will open the sites I love to crushing lawsuits, and kill jobs in the tech sector.  I urge you to join Senator Wyden and other members of Congress in opposing it.</textarea>
             </div>			
-
-			<input type="hidden" name="page" value="AC_Email_Congress_Letter">
-
-			<input type="hidden" name="lists" value="1" />
             <div class="formlistsubmit">
               <button type="submit" class="submit bebas">Send Letter</button>
             </div>
@@ -148,11 +150,17 @@ The Internet Blacklist bill will open the sites I love to crushing lawsuits, and
       trackingFn();
     });
  
-
-
-
-
-
     </script>
+
+
+		<script type="application/javascript">
+		    function getip(json){
+					$('#signup_ip').val(json.ip);
+		    }
+
+		$("#user_agent").val(navigator.userAgent);
+		</script>
+
+		<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>
   </body>
 </html>

@@ -93,12 +93,20 @@ THE SOFTWARE.
       </p>
 
       <div id="secondary-form" class="home">
-			  <form action="http://act.demandprogress.org/act/" method="POST" accept-charset="utf-8">
+			  <form action="http://nt.salsalabs.com/save" method="POST" accept-charset="utf-8">
 			    <div class="form-left">
-			      <input class="default-text" type="text" name="name" title="Name"><br>
-			      <input class="default-text" type="email" name="email" title="Email"><br>
-			      <input class="default-text" id="id_address1" type="text" name="address1" title="Address"><br>
-			      <input class="default-text" id="id_zip" type="text" name="zip" size="5" title="Zip"><br/> 
+						<input type="hidden" name="organization_KEY" value="501"/>
+						<input type="hidden" name="redirect" value="http://sopastrike.com/strike/thanks/"> 
+						<input type="hidden" name="object" value="supporter"/>
+						<input type="hidden" name="link" value="groups"/>
+						<input type="hidden" name="linkKey" value="9"/>
+						<input type="hidden" name="ip" id="signup_ip" />
+						<input type="hidden" name="user_agent" id="user_agent" />
+						<input type="hidden" name="receive_email" value="3">
+			      <input class="default-text" type="text" name="First_Name" title="Name"><br>
+			      <input class="default-text" type="email" name="Email" title="Email"><br>
+			      <input class="default-text" id="id_address1" type="text" name="Street" title="Address"><br>
+			      <input class="default-text" id="id_zip" type="text" name="Zip" size="5" title="Zip"><br/> 
 			      (<a href="javascript:go_foreign()">I'm not in the US</a>)<br>
 			    </div>
 			    <div class="form-right">
@@ -112,17 +120,6 @@ The Internet Blacklist bill will open the sites I love to crushing lawsuits, and
 			    <br class="clearfix">
 			
 			    <button class="css3button" type="submit">Send the letter!</button>
-			
-			    <input type="hidden" name="utf8" value="✔" />
-			    <input type="hidden" name="page" value="censorship_day_homepage" />
-			    <input type="hidden" name="action_referer" value="" id="id_referer" /> 
-			    <input type="hidden" name="lists" value="1" />
-			    <input type="hidden" name="form_name" value="act">
-			    <input type="hidden" name="url" value="http://act.demandprogress.org/letter/censorship_day_homepage/">
-			    <input type="hidden" name="js" value="1">
-			    <input type="hidden" name="required" value="address1">
-			    <input type="hidden" name="required" value="name">
-			    <input type="hidden" name="required" value="zip">
 			    <p>Fight for the Future may contact you about related campaigns. We will not share your email with anyone. <a href="http://fightforthefuture.org/privacy" title="Privacy Policy.">Privacy Policy</a></p>
 			  </form>
 			</div>
@@ -144,13 +141,16 @@ The Internet Blacklist bill will open the sites I love to crushing lawsuits, and
           <p>Tell us that your site is participating:</p>
           <br/>
           <div>
-            <form action="http://a.fightforthefuture.org/act/" method="post">
-              <input class="website" name="user_website" type="text" onfocus="if(this.value=='Your URL')this.value=''"onblur="if(this.value=='')this.value='Your URL'" value="Your URL" />
-              <input class="email" name="email" type="text" onfocus="if(this.value=='Your Email')this.value=''"onblur="if(this.value=='')this.value='Your Email'" value="Your Email" />              
+            <form action="http://nt.salsalabs.com/save" method="post">
+							<input type="hidden" name="organization_KEY" value="501"/>
+							<input type="hidden" name="redirect" value="http://fightforthefuture.org/thanks"> 
+							<input type="hidden" name="object" value="supporter"/>
+							<input type="hidden" name="ip" id="other_signup_ip" />
+							<input type="hidden" name="user_agent" id="other_user_agent" />
+							<input type="hidden" name="receive_email" value="3">
+              <input class="website" name="Web_Page" type="text" onfocus="if(this.value=='Your URL')this.value=''"onblur="if(this.value=='')this.value='Your URL'" value="Your URL" />
+              <input class="email" name="Email" type="text" onfocus="if(this.value=='Your Email')this.value=''"onblur="if(this.value=='')this.value='Your Email'" value="Your Email" />              
               <input type="image" src="images/upper-email-submit-button.png" class="send" />
-			<input type="hidden" name="page" value="American_Censorship">
-
-			<input type="hidden" name="lists" value="1" />
 
             </form>
           </div>
@@ -564,7 +564,18 @@ $(document).ready(function() {
   $(".default-text").blur();  
 });
 </script>
+	<script type="application/javascript">
+	    function getip(json){
+//	      alert(json.ip); // alerts the ip address
+$('#signup_ip').val(json.ip);
+$('#other_signup_ip').val(json.ip);
+	    }
 
+	$("#user_agent").val(navigator.userAgent);
+	$("#other_user_agent").val(navigator.userAgent);
+	</script>
+
+	<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>
 <div class="footerinforight" style="text-align: center; margin-bottom: 20px;"><p>Fight for the Future &copy; 2011. All rights reserved. Including <em>your</em> right to remix this however you want!  | <a href="http://fightforthefuture.org/privacy/">View our privacy policy</a></p></div>
 </body>
 </html>
