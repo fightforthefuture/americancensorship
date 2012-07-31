@@ -96,13 +96,16 @@
 			      <input class="default-text" type="text" name="First_Name" title="Name">
 			      <input class="default-text" type="email" name="Email" title="Email">
 			      <input class="default-text" id="Zip" type="text" name="zip" size="5" title="Zip">
-							<input type="hidden" name="organization_KEY" value="501"/>
-							<input type="hidden" name="redirect" value="http://sopastrike.com/strike/thanks/"> 
-							<input type="hidden" name="object" value="supporter"/>
+														<input type="hidden" name="object" value="supporter"/>
 
 							<input type="hidden" name="ip" id="signup_ip" />
 							<input type="hidden" name="user_agent" id="user_agent" />
-							<input type="hidden" name="Receive_Email" value="3">
+							
+							<input type="hidden" name="email_trigger_KEYS" value="7" />
+										<input type="hidden" name="organization_KEY" value="-501"/>
+										<input type="hidden" name="redirect" value="http://fightforthefuture.org/confirm"> 
+										<input type="hidden" name="Receive_Email" value="10">
+
 			      (<a href="javascript:go_foreign()">I'm not in the US</a>)
 			    </div>
 			    <br class="clearfix">
@@ -550,6 +553,6 @@ $(document).ready(function() {
 	<script type="application/javascript" src="http://fftf-ips.heroku.com/?callback=getip"></script>
 
 	<script src="http://fightforthefuture.org/js/history.js"></script>
-
+<!-- Just testing -->
 </body>
 </html>

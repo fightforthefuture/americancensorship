@@ -95,12 +95,14 @@
         <div class="bottomform">
           <form method="post" action="http://nt.salsalabs.com/save">
             <div class="formlist">
-								<input type="hidden" name="organization_KEY" value="501"/>
-								<input type="hidden" name="redirect" value="http://fightforthefuture.org/thanks"> 
+								
 								<input type="hidden" name="object" value="supporter"/>
 								<input type="hidden" name="ip" id="signup_ip" />
-								<input type="hidden" name="user_agent" id="user_agent" />
-								<input type="hidden" name="Receive_Email" value="3">
+								<input type="hidden" name="user_agent" id="user_agent" /><input type="hidden" name="email_trigger_KEYS" value="7" />
+            <input type="hidden" name="organization_KEY" value="-501"/>
+            <input type="hidden" name="redirect" value="http://fightforthefuture.org/confirm"> 
+      <input type="hidden" name="Receive_Email" value="10">
+
               <input class="default-text" type="text" name="First_Name" title="Name" required="required">
               <input class="default-text" type="email" name="Email" title="Email" required="required">
               <input class="default-text" type="text" name="Street" title="Address" required="required">
