@@ -1,0 +1,286 @@
+<html>
+<head>
+	<script src="//cdn.optimizely.com/js/14211444.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+    <script src="/jquery.cookie.js"></script>
+    <link href="/checklist.css" rel="stylesheet" type="text/css">    
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    	 	<meta property="og:title" content="Congress Votes on SOPA on January 24th" />
+	  <meta property="og:description" content="The Senate is scheduled to vote on the internet censorship bill on Tuesday, January 24th, and unless we can find 41 senators to block the vote, it is going to pass. Will you meet with your senators during the January recess and ask them to vote it down?" />
+	  <meta property="og:image" content="http://americancensorship.org/images/firewall-of-america-logo.png" />
+	  <meta property="og:url" content="http://americancensorship.org/meet" />
+	  <meta property="og:type" content="article" />
+	  <meta property="fb:admins" content="christianbryan, stickwithjosh"/>
+	  <meta property="fb:page_id" content="283481148338685" />
+	
+    <script>
+        var states = {
+          "AL": "107",
+          "AK": "106",
+          "AZ": "105",
+          "VA": "60",
+          "AR": "104",
+          "CA": "103",
+          "CO": "102",
+          "CT": "101",
+          "DE": "100",
+          "FL": "99",
+          "GA": "98",
+          "HI": "97",
+          "ID": "96",
+          "IL": "95",
+          "IN": "94",
+          "IO": "93",
+          "WV": "92",
+          "KS": "91",
+          "KY": "90",
+          "LA": "89",
+          "ME": "88",
+          "MD": "87",
+          "MA": "86",
+          "MI": "85",
+          "MN": "84",
+          "MS": "83",
+          "MO": "82",
+          "MT": "81",
+          "NE": "80",
+          "NV": "79",
+          "NH": "78",
+          "NJ": "77",
+          "NM": "76",
+          "NY": "75",
+          "NC": "74",
+          "ND": "73",
+          "OH": "72",
+          "OK": "71",
+          "OR": "70",
+          "PA": "69",
+          "RI": "68",
+          "SC": "67",
+          "SD": "66",
+          "TN": "65",
+          "TX": "64",
+          "UT": "63",
+          "VT": "62",
+          "WY": "56",
+          "WA": "59",
+          "WI": "57"
+        }
+
+
+
+      function getUrlVars()
+      {
+          var vars = [], hash;
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          for(var i = 0; i < hashes.length; i++)
+          {
+              hash = hashes[i].split('=');
+              vars.push(hash[0]);
+              vars[hash[0]] = hash[1];
+          }
+          return vars;
+      }
+
+      $(document).ready(function() {
+        /* See if there's a state in the url and autofill if so. */
+        if (getUrlVars()["state"]) {
+          var state = getUrlVars()["state"].toUpperCase();
+          //var option = $("option[value='" + state + "']")[0];
+          //if (option) { option.selected = true; }
+          var href = "http://my.americancensorship.org"
+          if (state in states) {
+            href = href + "/discussion/" + states[state];
+          }
+          window.top.document.location.href = href;
+          
+        }
+
+        /* Detect form submit. Validate and store state selection. */
+        $("#callin").submit(function() {
+          var state = $("#state")[0].value;
+          if (state !== "") {
+            $.cookie("fftf-town-hall-state", state);
+          }
+        });
+
+        /* Show and hide the embed pane. */
+        $('.embed').click(function() {
+          console.log('embed');
+          $('.thecodez').fadeIn();
+        });
+
+        $('.closecodez').click(function() {
+          $('.thecodez').fadeOut();
+        });
+
+        /* Default text hider stuff */
+        $(".default-text").focus(function(){
+          if ($(this).val() == $(this)[0].title){
+            $(this).removeClass("default-text-active");
+            $(this).val("");
+          }
+        });
+
+        $(".default-text").blur(function(){
+          if ($(this).val() == ""){
+            $(this).addClass("default-text-active");
+            $(this).val($(this)[0].title);
+          }
+        });
+
+        $(".default-text").blur();
+      });
+    </script>
+
+<style>
+#top-priority form button.submit, #top-priority a.btn {background: url(/images/ac2-button-green.png) no-repeat;}
+#top-priority a.btn {background: None; text-indent: 0; font-family: 'helvetica neue', helvetica, verdana; color: #000; font-size: 22px; text-decoration: underline; color: #2587D9; font-weight: bold; text-shadow: none;}
+
+form#callin {margin: 0 auto; width: 800px; overflow: hidden; height: 120px; display: block;}
+form#callin input {display: inline; width: 150px; text-align: center;}
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-26978317-1']);
+	      _gaq.push(['_trackPageview']);
+
+	      (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();
+
+	    </script>
+	<div id="top-priority" class="primary-actions">
+    <div class="thecodez" id="thecodez-heavy">
+      <div class="thecodez-container">
+        <div class="closecodez">CLOSE</div>
+        <p class="bebas">Copy and paste the code below into your<br />website or blog to help get the message out</p>
+        <p class="explanation">iFrame:</p>
+        <textarea><iframe src="http://americancensorship.org/callwidget" width="588" height="625" border="0"></iframe></textarea>
+        <p class="explanation">Modal:</p>
+        <textarea><script src="http://americancensorship.org/modal/call-client.js"></script></textarea>
+        <p class="learn">A project of internet and democracy groups | <a href="http://americancensorship.org">americancensorship.org</a></p>
+      </div>
+    </div>
+		<div class="wrap" style="width: 100%;">
+			<h2 style="width: 800px; margin: 0 auto; margin-top: 20px;">Join the Strike!</h2>
+
+            <div class="extra"></div>
+            <script>
+
+            if (top === self) { 
+            console.log("not in a frame");
+            $('.extra').prepend('<p><strong>Stop American Censorship:</strong> Congress is about to pass internet censorship, even though the vast majority of Americans are opposed. We need to kill the bill to protect our rights to free speech, privacy, and prosperity.</p>');
+            } else {
+                console.log("in a frame");}
+            </script>
+      <p>Websites are going black on <strong>January 18th</strong> to save the internet. Join them by writing your senator and tell them you oppose PIPA. If you have a site and want to join the strike, <a href="http://www.sopastrike.com">go here.</a></p>
+			<form action="https://donate.fightforthefuture.org/page/signup/meet-your-senators" method="POST" id="callin">
+				<input type="hidden" name="redirect_to" value="http://americancensorship.org/meet-your-senators/thanks.html" />
+				<input type="email" name="email"  title="Email"  class="default-text" required>
+        <select id="state" name="state" required>
+          <option value="" selected>None</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="DC">Washington D.C.</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+
+        <br/>
+				<button type="submit" class="submit bebas"><img src="/images/ac2-button-checkmark.png" alt="checkmark" style="padding-top: 15px;" /> <span style="padding-bottom: 10px;">Yes, I'll do it.</span></button>
+			</form>
+            <p style="font-size: 150%; line-height: 1.6;"><a href="http://my.americancensorship.org/" target="_parent">See what is happening in your state. You can join the conversations,<br />a town hall or meeting in our state-by-state forums.</a></p>
+
+      <a class="embed" href="#" title="Embed this widget on your site!">
+        Embed this widget on your site!
+      </a>
+			<p class="small">Fight for the Future may contact you about related campaigns.<br /> We will not share your email with anyone. <a href="http://fightforthefuture.org/privacy" title="Privacy Policy.">Privacy Policy</a>.
+      </p>
+
+			
+		</div><!-- kill .wrap -->
+	</div><!-- kill .primary-actions -->
+	
+	<script type="text/javascript">
+	var _sf_async_config={uid:30346,domain:"americancensorship.org"};
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement('script');
+	    e.setAttribute('language', 'javascript');
+	    e.setAttribute('type', 'text/javascript');
+	    e.setAttribute('src',
+	       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+	       "js/chartbeat.js");
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != 'function') ?
+	     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+	
+	// Setup tracking for form submisison on call form
+    var trackingFn = function() {
+      window.optimizely = window.optimizely || [];
+      window.optimizely.push(["trackEvent", "SubmittedCallForm"]);
+    }
+
+    $('#callin').submit(function() {
+      trackingFn();
+    });
+	</script>
+  <script type="text/javascript" src="/geo.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+/* CSS Document */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#fefefe;
+	text-align:left;
+	background:#fff;
+	background:url(call-images/bg.gif) repeat;
+	
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul, li, ol{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+img{
+	border:none;
+	padding:0;
+	margin:0;
+}
+.cls{
+	clear:both;
+}
+a{
+	outline:none;
+	color:#00bca4;
+	text-decoration:none;
+}
+a:hover{
+	color:#00bca4;
+	text-decoration:underline;
+}
+.hide,h1 b,h2 b,h3 b,h5 b,a i{
+     position: absolute;
+     left: -9999px;
+}
+
+
+.wrap{
+	width:560px;
+	margin:0 auto;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+.header{
+	margin: 0 auto;
+	width: 100%;
+	height: 78px;
+	background:url(call-images/headerbg.png) repeat-x;
+	text-align:center;
+	overflow:hidden;
+	padding: 10px 0 0 0;
+	color:#fefefe;
+}
+.header h1{
+	font-size:22px;
+	color:#fefefe;
+	font-weight:normal;
+	text-transform:uppercase;
+	padding:0 0 3px 0;
+}
+.header h1 span{
+	color:#00bca4;
+}
+.maincontent{
+	width:512px;
+	padding: 10px 0px 0px 0px;
+  margin: 0 auto;
+	overflow:hidden;
+}
+.topinfo{
+	width:512px;
+	padding: 0 0 5px 0;
+	overflow: auto;
+	text-align:center;
+}
+.topinfo h1{
+	font-size:44px;
+	color:#00bca4;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	font-weight:normal;
+	text-transform:uppercase;
+	padding:0 0 12px 0;
+	margin-top: 5px;
+}
+.topinfo p{
+	font-size:22px;
+	color:#fff;
+}
+.counterarea{
+	width:512px;
+	padding:20px 0 15px 0;
+	position:relative;
+}
+.counterbox{
+	width:145px;
+	height:33px;
+	position:absolute;
+	top:-7px;
+	left:102px;
+	background:url(call-images/counterbox.png) no-repeat;
+	color:#fff;
+}
+.counterbox span{
+	font-size:14px;
+	color:#fff;
+	display:block;
+	padding:0px 0 0 25px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	letter-spacing: 1px;
+	margin-top: -2px;
+}
+.counterarea h4{
+	padding:10px 0 0 0;
+	text-align:center;
+	color:#fff;
+	font-size:26px;
+	letter-spacing:5px;
+}
+.bottomform{
+	width:512px;
+	padding: 0 0 0 0;
+	overflow:hidden;
+}
+.bottomform p{
+	text-align:center;
+	/* padding:0 0 15px 0; */
+  padding: 0;
+	line-height:24px;
+}
+.formlist{
+	width:506px;
+	padding:0 0 10px 6px;
+	overflow:hidden;
+}
+a.next, .formlist input{
+	float:left;
+	width:486px;
+	height:31px;
+	border:none;
+	padding:12px 0 0 15px;
+	color:#bebebe;
+	font-size:18px;
+	background:url(call-images/textareabg.png) no-repeat;
+	margin-top: 10px;
+	display: block;
+}
+
+@-moz-document url-prefix() {
+	.formlist input
+	{ 
+		padding: 6px 0 5px 15px;
+	}
+}
+
+
+.formlist textarea, .thecodez textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	width:486px;
+	height:31px;
+	border:none;
+	padding:12px 0 0 15px;
+	color:#bebebe;
+	font-size:18px;
+	background:url(call-images/textareabg.png) no-repeat;
+  margin-top: 10px;
+}
+.formlistsubmit{
+	width:512px;
+	padding:0 0 0 0;
+	overflow:hidden;
+    float: left;
+}
+a.next, .formlistsubmit button.submit{
+	width:511px;
+	height:53px;
+	border:none;
+	padding:0;
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	text-align: center;
+	letter-spacing: 1.5px;
+	cursor:pointer;
+	background: url(call-images/contactbtn.png) no-repeat;
+	margin-left: -3px;
+	margin-top: 10px;
+}
+
+a.next {padding-top: 11px; letter-spacing: 1.5;}
+.bottombg{
+	width:588px;
+	height:15px;
+	background:url(call-images/bottombg.png) no-repeat;
+}
+
+ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+	margin-left: 30px;
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+
+ol li {list-style-type: decimal;}
+
+#talkingpoints {padding-top: 20px; font-size: 18px; line-height: 1.5; overflow: auto; margin-bottom: 20px;}
+
+p.embed {
+    float: left; 
+    font-size: 120%; 
+    text-align: center; 
+    width: 100%; 
+    margin-bottom: -10px;
+	margin-top: 5px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.thecodez {
+	float: left;
+	position: fixed;
+	background: rgba(0,0,0, .9);
+	width: 544px;
+	padding-left: 44px;
+	margin-top: -200px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+	height: 100%;
+	font-size: 130%;
+	font-weight: bold;
+	display: none;
+}
+
+.thecodez p {letter-spacing: 1.8px; text-align: left;}
+.thecodez p.explanation {font-size: 14px; letter-spacing: 1px; margin-bottom: 0px; padding-bottom: 0; margin-top: 10px; float: left; display: block; float: left;}
+
+.closecodez {
+	position: absolute;
+	width: 80px;
+	height: 20px;
+	left: 508px;
+	top: 0px;
+	padding-top: 5px;
+	background: red;
+	z-index: 9;
+	text-align: center;
+	cursor: pointer;
+	font-size: 13px;
+}
+.thecodez textarea {
+  font-size: 60%;
+  text-align: left;
+  color: #666;
+  margin-top: 0;
+   margin-bottom: 10px;
+   display: block;
+}
+
+.social {margin: 0 auto; text-align: center;}
+
+p.learn {text-align: center; font-size: 13px; float: left; letter-spacing: 1px;}
+
+.bebas {
+   font: 24px/32px 'BebasNeueRegular', Arial, sans-serif;
+}
+.header h1.bebas {
+   letter-spacing: 1.5px;
+   line-height: 1.5em;
+}	
+
+/* Disclaimer Text */
+.disclaimer {
+   float: left;
+   text-align: center;
+   display: block;
+   width: 100%;
+   font-size: 75%;
+}
+
+/* Secondary Sell: text below the submit button for secondary actions. */
+.secondary-sell {
+   padding: 10px;
+   text-align: center;
+}
+.secondary-sell a {
+   color: #fff;
+   text-decoration: underline;
+}
+.secondary-sell a:hover {
+   color: #ddd;
+}
+.secondary-sell p {
+   font-size: 18px;
+}
+.secondary-sell .left {   
+   float: left;
+   margin-left: 50px;
+}
+.secondary-sell .right {
+   float: right;
+   margin-right: 50px;
+}
+
+/* Horizontal Modal */
+
+.wrap.horizontal, .wrap.horizontal .maincontent, .wrap.horizontal .topinfo, .wrap.horizontal .counterarea, .wrap.horizontal .formlist,.wrap.horizontal .bottomform {
+	
+}
+
+.wrap.horizontal .left_form {
+	height: 40px;
+}
+
+.horizontal .topinfo p {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.horizontal .bottomform p {
+	font-size: 13px;
+}
+
+.horizontal .formlist input {
+	width: 107px;
+	margin-right: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px 0 5px 5px;
+	border: 1px solid #333;
+	
+}
